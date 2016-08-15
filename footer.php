@@ -54,7 +54,7 @@
 					<script type="text/javascript">
 					    var lhnAccountN = "30659-1";
 					    var lhnButtonN = 4827;
-					    var lhnChatPosition = 'righttab';
+					    var lhnChatPosition = 'bottomtab';
 					    var lhnInviteEnabled = 1;
 					    var lhnWindowN = 0;
 					    var lhnDepartmentN = 35805;
