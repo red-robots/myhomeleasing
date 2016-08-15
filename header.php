@@ -313,7 +313,7 @@ else { document.getElementById(d).style.display = "none"; }
       <div id="header">
 
         <div id="logo">
-          <!-- <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/my-townhome-logo.png" alt="" border="0"></a>  -->
+          <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="" border="0"></a> 
         </div><!-- #logo -->
 
         <div id="header-content-wrapper">

@@ -303,3 +303,11 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
  $existing_mimes['vcf'] = 'text/x-vcard';
  return $existing_mimes;
 }
+
+ /*-------------------------------------
+  Move Yoast to the Bottom
+---------------------------------------*/
+function yoasttobottom() {
+  return 'low';
+}
+add_filter( 'wpseo_metabox_prio', 'yoasttobottom');

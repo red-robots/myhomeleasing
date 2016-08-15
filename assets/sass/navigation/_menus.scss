@@ -89,23 +89,20 @@
 		float: left;
 		position: relative;
 		text-align: center;
-		padding-right: 14px;
-		padding-left: 15px;
-		font-size: 15px;
+		font-size: 14px;
 
 		&:hover > a,
 		&.focus > a {
 		}
 		&:last-child a {
-			width: 175px;
+			width: auto;
 			background-color: #3753A1;
 			-moz-border-radius: 6px;
 			border-radius: 6px;
-			padding-left: 0px!important;
 			/*height: 18px;*/
 			margin-top: 10px;
 			line-height: 4px!important;
-			padding: 20px 10px;
+			padding: 20px 5px;
 			display: block;
 
 			&:hover {
@@ -119,7 +116,8 @@
 		color: #ffffff;
 		display: block;
 		line-height: 26px;
-		padding: 18px 0px 3px 10px;
+		padding: 18px 13px 10px 13px;
+
 		text-decoration: none;
 		margin-bottom: 15px;
 		@include transition(all .3s ease);

@@ -325,13 +325,13 @@ input {
 }
 #header-wrapper {
 	width: 100%;
-	height: 178px;
+	// height: 178px;
 	float: left;
 	background-color: #000000;
 }
 #main-header {
 	width: 85%;
-	height: 178px;
+	// height: 178px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -454,7 +454,7 @@ input {
 }
 #logo {
 	width: 362px;
-	height: 91px;
+	// height: 91px;
 	float: left;
 	padding-top: 12px;
 	@media screen and (min-width: $tabwidth) {
@@ -463,6 +463,11 @@ input {
 
 	@media screen and (min-width: $deskwidth) {
 		
+	}
+
+	a {
+		display: block;
+		width: 362px;
 	}
 }
 #header-content-wrapper {
@@ -780,6 +785,15 @@ blockquote {
 	color: #ffffff;
 	text-align: right;
 	padding-top: 10px;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		margin: 10px 0;
+		padding: 0;
+		list-style: none;
+	}
 }
 #footer2 {
 	width: 100%;

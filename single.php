@@ -84,7 +84,7 @@ if( !empty($location) ):
 <!--- / tab -->
 <!-- -->
 <?php if (strlen(get_post_meta($post->ID, "overview", true)) > 0) : ?>
-<?php echo do_shortcode("[tabby title='Features']"); ?>
+<?php echo do_shortcode("[tabby title='Overview']"); ?>
 
 <div class="tab-content">
 <?php the_field("overview"); ?></div>
@@ -94,11 +94,11 @@ if( !empty($location) ):
 
 
 <!-- -->
-<?php if (strlen(get_post_meta($post->ID, "floorplans_&_downloads", true)) > 0) : ?>
-<?php echo do_shortcode("[tabby title='Floorplans & Documents']"); ?>
+<?php if (strlen(get_post_meta($post->ID, "features", true)) > 0) : ?>
+<?php echo do_shortcode("[tabby title='Features']"); ?>
 
 <div class="tab-content">
-<?php the_field("floorplans_&_downloads"); ?></div>
+<?php the_field("features"); ?></div>
 
  <!--- / tab -->	
 <?php endif; ?>
@@ -106,13 +106,25 @@ if( !empty($location) ):
 
 
 <!-- -->
-<?php if (strlen(get_post_meta($post->ID, "pricing_analysis", true)) > 0) : ?>
-<?php echo do_shortcode("[tabby title='Pricing Analysis']"); ?>
+<?php if (strlen(get_post_meta($post->ID, "points_of_interest", true)) > 0) : ?>
+<?php echo do_shortcode("[tabby title='Points of Interest']"); ?>
 
 <div class="tab-content">
-<?php the_field("pricing_analysis"); ?></div>
+<?php the_field("points_of_interest"); ?></div>
 
  <!--- / tab -->	
+<?php endif; ?>
+<!-- -->
+
+
+<!-- -->
+<?php if (strlen(get_post_meta($post->ID, "pricing", true)) > 0) : ?>
+<?php echo do_shortcode("[tabby title='Pricing']"); ?>
+
+<div class="tab-content">
+<?php the_field("pricing"); ?></div>
+
+ <!--- / tab -->  
 <?php endif; ?>
 <!-- -->
 
