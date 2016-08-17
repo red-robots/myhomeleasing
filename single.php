@@ -62,35 +62,35 @@ get_header(); ?>
               
           </div><!-- tab content -->  
 
-          <?php if (strlen(get_post_meta($post->ID, "overview", true)) > 0) : ?>
+          <?php if (strlen(get_post_meta($post->ID, "overview_new", true)) > 0) : ?>
             <?php echo do_shortcode("[tabby title='Overview']"); ?>
             <div class="tab-content">
-              <?php the_field("overview"); ?>
+              <?php the_field("overview_new"); ?>
             </div><!--- / tab --> 
           <?php endif; ?>
 
 
-          <?php if (strlen(get_post_meta($post->ID, "features", true)) > 0) : ?>
+          <?php if (strlen(get_post_meta($post->ID, "features_new", true)) > 0) : ?>
             <?php echo do_shortcode("[tabby title='Features']"); ?>
             <div class="tab-content">
-              <?php the_field("features"); ?>
+              <?php the_field("features_new"); ?>
             </div><!--- / tab -->  
            <?php endif; ?>
 
 
-          <?php if (strlen(get_post_meta($post->ID, "points_of_interest", true)) > 0) : ?>
+          <?php if (strlen(get_post_meta($post->ID, "points_of_interest_new", true)) > 0) : ?>
             <?php echo do_shortcode("[tabby title='Points of Interest']"); ?>
             <div class="tab-content">
-              <?php the_field("points_of_interest"); ?>
+              <?php the_field("points_of_interest_new"); ?>
             </div><!--- / tab --> 
           <?php endif; ?>
 
 
           
-          <?php if (strlen(get_post_meta($post->ID, "pricing", true)) > 0) : ?>
+          <?php if (strlen(get_post_meta($post->ID, "pricing_new", true)) > 0) : ?>
             <?php echo do_shortcode("[tabby title='Pricing']"); ?>
             <div class="tab-content">
-              <?php the_field("pricing"); ?>
+              <?php the_field("pricing_new"); ?>
             </div><!--- / tab -->  
            <?php endif; ?>
 
@@ -99,80 +99,7 @@ get_header(); ?>
         </div><!-- features -->
 
 
-        <div id="features-agents">
-          <h2>Community Realtor</h2>
-
-          <div id="community-realtors">
-            <div class="community-realtor">
-            <?php
-
-            // start your counter
-
-            $i = 0;
-            //get your array
-            $myField = get_field('community_realtor'); 
-
-            // mix it up
-            shuffle($myField);
-
-            foreach($myField as $myTemp) :
-            // count up
-                $i++;
-
-
-            // get the id
-            $userID = $myTemp['ID'];
-            $myUser = get_userdata($userID);
-            $displayName = $myUser->display_name;
-           $phone = get_field( 'office_phone', 'user_'.$userID );
-                // email if you add the custom field to the profile
-                // see above if you want it to be the email tied to the login   
-            $email = get_field( 'email', 'user_'.$userID );   
-            $antispam = antispambot($email);
-            // image stuff
-           $image = get_field( 'photo', 'user_'.$userID );
-           $size = 'single_community_agent';
-            $thumb = $image['sizes'][ $size ];
-            $link = get_author_posts_url($userID);
-            echo '<div class="communities-agents-photo">';
-            //echo '<a href="';
-            //echo $link;
-            //echo '">';
-            echo '<img src="';
-            print_r($thumb);
-            echo '" />';
-           // echo '</a>';
-            echo '</div>';
-            echo '<h2 class="community-realtor-name">';
-            //echo '<a href="';
-           // echo $link;
-            //echo '">';
-            echo $displayName;
-            //echo '</a>';
-            echo '</h2>';
-            //echo '<h2 class="community-realtor-email">';
-            //echo '<a href="mailto:';
-            //echo $antispam;
-            //echo '">';
-           // echo $antispam;
-            //echo '</a>';
-           // echo '</h2>';
-           // echo '<h2>';
-            //echo $phone;
-            //echo '</h2>';
-            // If we've counted to 1, get out of the loop
-
-            if( $i == 1 ) {
-               break;
-            }
-            endforeach;
-            ?>
-
-              <div class="agent-neighborhood-quote"><?php the_field("agent_neighborhood_quote"); ?></div>
-
-            </div> <!-- community-realtor --> 
-          </div><!-- #community-realtors -->
-        </div><!-- features-agents -->
+        
       </div><!--- / features row -->
 
 
