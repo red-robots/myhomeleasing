@@ -43,7 +43,7 @@ get_header(); ?>
       
       <div id="features-row">
         <div id="features"> 
-        <?php echo do_shortcode("[tabby title='Overview']"); ?>
+        
           
           <div class="tab-content">
           <?php the_field("map_&_location"); ?>
