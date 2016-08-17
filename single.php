@@ -70,10 +70,10 @@ get_header(); ?>
           <?php endif; ?>
 
 
-          <?php if (strlen(get_post_meta($post->ID, "property_alert", true)) > 0) : ?>
-            <?php echo do_shortcode("[tabby title='Property Alert']"); ?>
+          <?php if (strlen(get_post_meta($post->ID, "features", true)) > 0) : ?>
+            <?php echo do_shortcode("[tabby title='Features']"); ?>
             <div class="tab-content">
-              <?php the_field("property_alert"); ?>
+              <?php the_field("features"); ?>
             </div><!--- / tab -->  
            <?php endif; ?>
 
@@ -87,10 +87,10 @@ get_header(); ?>
 
 
           
-          <?php if (strlen(get_post_meta($post->ID, "property_valuation", true)) > 0) : ?>
-            <?php echo do_shortcode("[tabby title='Property Valuation']"); ?>
+          <?php if (strlen(get_post_meta($post->ID, "pricing", true)) > 0) : ?>
+            <?php echo do_shortcode("[tabby title='Pricing']"); ?>
             <div class="tab-content">
-              <?php the_field("property_valuation"); ?>
+              <?php the_field("pricing"); ?>
             </div><!--- / tab -->  
            <?php endif; ?>
 
