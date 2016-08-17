@@ -43,7 +43,7 @@ get_header(); ?>
       
       <div id="features-row">
         <div id="features"> 
-        
+      
           
           <div class="tab-content">
           <?php the_field("map_&_location"); ?>
@@ -99,7 +99,16 @@ get_header(); ?>
         </div><!-- features -->
 
 
-        
+        <?php 
+        $rab = get_field('request_a_brochure');
+        if( $rab != '' ) : ?>
+          <div id="features-agents">
+            <h2>Request a Brochure</h2>
+
+            <?php echo $rab; ?>
+
+          </div><!-- features-agents -->
+        <?php endif; ?>
       </div><!--- / features row -->
 
 
