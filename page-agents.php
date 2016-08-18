@@ -83,7 +83,7 @@
             
                 <img src="<?php echo $thumb; ?>" />
                 <div class="agent-profile-box-content">
-                    <h2><?php echo $agentName2; ?></h2>
+                    <h2><?php echo $agentName . ' ' . $agentName2; ?></h2>
                     <div><?php echo $myField; ?></div>
                 </div><!-- agent-profile-box-content -->
                 <div class="agent-email">

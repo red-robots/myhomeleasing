@@ -118,10 +118,13 @@ $antispam = antispambot($email);
 </div><!-- single-agent-row1 -->
 
 
+<!-- 
+Favorite Neighborhoods and communities 
 
 <div id="single-agent-row2">
-	<?php get_template_part('inc/agent-links'); ?>
-</div><!-- single-agent-row2 -->
+	<?php //get_template_part('inc/agent-links'); ?>
+</div>single-agent-row2 
+-->
 
 
 
