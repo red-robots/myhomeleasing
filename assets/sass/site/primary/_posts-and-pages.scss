@@ -1845,3 +1845,14 @@ li.lh:hover {
     background-color: white;
     cursor: pointer;
 }
+
+.form-col {
+	width: auto;
+	float: left;
+	display: inline-block;
+	margin-right: 50px;
+
+	input {
+		margin: 0 0 5px 0;
+	}
+}

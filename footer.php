@@ -53,12 +53,12 @@
 					<!-- This code must be installed within the body tags -->
 					<script type="text/javascript">
 					    var lhnAccountN = "30659-1";
-					    var lhnButtonN = 4827;
-					    var lhnChatPosition = 'bottomtab';
+					    var lhnButtonN = 8234;
+					    var lhnChatPosition = 'default';
 					    var lhnInviteEnabled = 1;
 					    var lhnWindowN = 0;
 					    var lhnDepartmentN = 35805;
-					    var lhnChatPositionYVal = 150;
+					    // var lhnChatPositionYVal = 150;
 					</script>
 					<a href="http://www.livehelpnow.net/products/live-chat-system" target="_blank" style="font-size:10px;" id="lhnHelp">live chat service provider</a>
 					<script src="//www.livehelpnow.net/lhn/widgets/chatbutton/lhnchatbutton-current.min.js" type="text/javascript" id="lhnscript"></script>   

@@ -80,6 +80,7 @@ $the_query = new WP_Query( $querySlides );
 
       <?php echo do_shortcode("[tabby title='Let us manage']"); ?>
       <div class="find-box-content">
+        <?php get_template_part('inc/manage-form'); ?>
       </div><!-- find-box-content -->
 
       <?php echo do_shortcode("[tabby title='Quick Search']"); ?>
@@ -181,10 +182,15 @@ We’d like to be your realtor for this home and the next.
 
 <div id="home-row3-content">
 
-<div id="home-row3-content-heading">SELLING?  KNOWLEDGE IS EVERYTHING.</div>
+<div id="home-row3-content-heading">Why hire a property manager?</div>
 <?php $recent = new WP_Query("page_id=22"); while($recent->have_posts()) : $recent->the_post();?>
 
-<div id="home-row3-content-box1"><a href="<?php the_field("link_one"); ?>"><img src="<?php bloginfo('template_url'); ?>/images/box1image.png" alt="" border="0"></a><div class="home-row3-content-link"><a href="<?php the_field("link_one"); ?>"><?php the_field("link_one_text"); ?></a></div></div>
+<div id="home-row3-content-box1">
+  <a href="<?php the_field("link_one"); ?>"><img src="<?php bloginfo('template_url'); ?>/images/box1image.png" alt="" border="0"></a>
+  <div class="home-row3-content-link">
+    <a href="<?php the_field("link_one"); ?>"><?php the_field("link_one_text"); ?></a>
+  </div>
+</div>
 
 <div id="home-row3-content-box2"><a href="<?php the_field("link_two"); ?>"><img src="<?php bloginfo('template_url'); ?>/images/box2image.png" alt="" border="0"></a><div class="home-row3-content-link"><a href="<?php the_field("link_two"); ?>"><?php the_field("link_two_text"); ?></a></div></div>
 

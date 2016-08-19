@@ -1252,7 +1252,7 @@ A:visited{color:#0099cf;text-decoration:underline}
 A:active{color:#0099cf;text-decoration:underline}
 A:hover{color:#47bce7;text-decoration:underline}
 a,img{border:0}
-.main-navigation{display:block;text-transform:uppercase;clear:both;width:auto;margin-top:10px;padding-top:12px;float:right}
+.main-navigation{text-transform:uppercase;clear:both;width:auto;margin-top:10px;padding-top:12px;float:right}
 .main-navigation ul{list-style:none;margin:0;padding-left:0}
 .main-navigation ul ul{display:none;float:left;margin:0;position:absolute;left:0;width:230px;z-index:99999;padding-right:0;padding-top:5px}
 .main-navigation ul ul ul{left:100%;top:0}
@@ -1882,6 +1882,8 @@ div.content_tab{display:none}
 #ul_tabs{clear:both;padding:0;margin:0}
 .lh{padding:5px;background-color:gray;list-style:none;width:88px;height:25px;float:left;border:1px solid #fffffa;text-align:center}
 li.lh:hover{background-color:white;cursor:pointer}
+.form-col{width:auto;float:left;display:inline-block;margin-right:50px}
+.form-col input{margin:0 0 5px 0}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
