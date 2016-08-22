@@ -15,24 +15,15 @@ get_header(); ?>
         <div id="communities-heading-photo">
         <?php
           $image = get_field('featured_photo');
-          $url = $image['url'];
-          $title = $image['title'];
-          $alt = $image['alt'];
-          $caption = $image['caption'];
-          // thumbnail or custom size that will go
-          // into the "thumb" variable.
-          $size = 'homepage';
-          $thumb = $image['sizes'][ $size ];
-          $width = $image['sizes'][ $size . '-width' ];
-          $height = $image['sizes'][ $size . '-height' ];
+          $size = 'full';
 
-        if( !empty($image) ): ?>
-          <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" />
-        <?php endif; ?>
+        if( !empty($image) ): 
+          echo wp_get_attachment_image( $image, $size );
+         endif; ?>
           <div id="communities-heading-link"><a href="#listings">View Listings</a></div>
           <div id="communities-title-box"><div id="page-heading"><h2><?php
-        $category = get_the_category(); 
-        echo $category[0]->cat_name;
+        // $category = get_the_category(); 
+        // echo $category[0]->cat_name;
         ?></h2>
           <h1><?php the_title()?></h1></div>
           <div style="font-size: 14px; color: #ffffff;"><?php the_field("short_description"); ?></div>

@@ -757,6 +757,7 @@ blockquote {
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	margin-top: 30px;
+	overflow: hidden;
 	@media screen and (min-width: $tabwidth) {
 
 	}

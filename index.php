@@ -80,11 +80,12 @@ $the_query = new WP_Query( $querySlides );
 
       <?php echo do_shortcode("[tabby title='Let us manage']"); ?>
       <div class="find-box-content">
-        <?php get_template_part('inc/manage-form'); ?>
+        
       </div><!-- find-box-content -->
 
       <?php echo do_shortcode("[tabby title='Quick Search']"); ?>
       <div id="home-search">
+       <?php get_template_part('inc/manage-form'); ?>
       </div><!-- home search -->
 
     

@@ -110,9 +110,10 @@ $antispam = antispambot($email);
 			<a href="<?php echo $my_listings; ?>" target="_blank">VIEW MY LISTINGS</a>
 		</div><!-- agent-button -->
 		
-		<div class="agent-button-link">
+		<!--<div class="agent-button-link">
 			<a href="<?php bloginfo('url'); ?>/mortgage-calculator?iframe=true" class="iframe">MORTGAGE CALCULATOR</a>
-		</div><!-- agent-button -->
+		</div> agent-button -->
+		
 	</div><!-- single agent links -->
 
 </div><!-- single-agent-row1 -->
