@@ -1640,7 +1640,16 @@ ol.pings h3{font-size:.9em}
 #find-box-wrapper{width:100%;position:absolute;left:0;bottom:0;z-index:12000;color:#fff}
 #find-box{width:100%;margin-left:auto;margin-right:auto}
 @media screen and (min-width:1200px){#find-box{width:1100px}
-}#find-box .responsive-tabs-wrapper{margin-bottom:0}
+}section.tab-buttons{background-color:#000;color:#fff;padding:30px 0;overflow:hidden}
+section.tab-buttons h3{font-size:30px;color:#fff}
+section.tab-buttons .col{width:33%;float:left;text-align:center;overflow:hidden;margin-bottom:30px}
+section.tab-buttons .icon{width:80px;height:80px;margin:10px auto;text-align:center}
+section.tab-buttons i{font-size:5.8vw;margin:0 auto;text-align:center;-webkit-transition:all .2s ease;transition:all .2s ease;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
+section.tab-buttons a{text-decoration:none;color:#fff;display:block}
+section.tab-buttons a:hover i{-webkit-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
+section.tab-buttons .quick-search{clear:both;width:70%;margin:30px auto;border-top:1px solid rgba(255,255,255,0.5);padding:20px 0}
+section.tab-buttons input.right{float:right}
+#find-box .responsive-tabs-wrapper{margin-bottom:0}
 .find-box-content p{margin-top:0}
 #find-box .responsive-tabs .responsive-tabs__panel{background-color:transparent !important;background-image:url(images/bg-find-box.png);background-repeat:repeat;border:0;padding-top:25px !important;padding-left:30px !important;padding-right:20px !important;padding-bottom:25px !important;border-radius:5px 5px 0 0;border-top:0 !important}
 .responsive-tabs .responsive-tabs__list__item--active{background:black !important;background:rgba(0,0,0,0.9) !important;border-color:transparent !important;color:#fff !important}

@@ -66,34 +66,49 @@ $the_query = new WP_Query( $querySlides );
 </div><!-- .flexslider -->
 <?php endif; // end loop ?>
 
-  <div id="find-box-wrapper">
-    <div id="find-box">
 
-      <?php echo do_shortcode("[tabby title='Hot Properties']"); ?>
-      <div id="home-search">
-          <?php //echo do_shortcode('[idx mylistings="1" city="Charlotte" type="rent"]'); ?>
-      </div><!-- home search -->
 
-      <?php echo do_shortcode("[tabby title='For Renters']"); ?>
-      <div class="find-box-content">
-      </div><!-- find-box-content -->
 
-      <?php echo do_shortcode("[tabby title='Let us manage']"); ?>
-      <div class="find-box-content">
-        
-      </div><!-- find-box-content -->
+  </div><!-- find-box-wrapper -->
 
-      <?php echo do_shortcode("[tabby title='Quick Search']"); ?>
-      <div id="home-search">
-       <?php get_template_part('inc/manage-form'); ?>
-      </div><!-- home search -->
+    <div id="find-box-wrapper">
+   
+
+    <section class="tab-buttons">
+      <div class="col">
+        <a href="http://myhomeleasing.localhomesearch.net/idx/?op=query&stype=area&_srf=1&subv2=&proptype=rnt&my=1&street=&city=&zip=&price_min=&price_max=&beds=&baths=&sqft=&acreage=">
+          
+          <div class="icon"><i class="fa fa-key" aria-hidden="true"></i></div>
+          <h3>Hot Properties</h3>
+        </a>
+      </div><!-- col -->
+      <div class="col">
+        <a href="#">
+          
+          <div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+          <h3>For Renters</h3>
+        </a>
+      </div><!-- col -->
+      <div class="col">
+        <a href="<?php bloginfo('url'); ?>/property-management-services/">
+          <div class="icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+          <h3>Let Us Manage</h3>
+        </a>
+      </div><!-- col -->
+
+      <div class="quick-search">
+        <h3>Quick Search</h3>
+         <?php get_template_part('inc/manage-form'); ?>
+      </div><!-- quick search -->
+
+
+    </section>
+
 
     
 
-    <?php echo do_shortcode("[tabbyending]"); ?> 
 
-
-    </div><!-- find-box -->
+   
   </div><!-- find-box-wrapper -->
          
     <?php wp_reset_postdata(); ?>

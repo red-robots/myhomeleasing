@@ -164,7 +164,7 @@ Street name: <br/>
 <input type="text" name="street" size="15"><br/>
 </div><!-- form col -->
 
-<div class="clear"></div>
+<!-- <div class="clear"></div> -->
 
-<input type="submit" value="Search">
+<input class="right" type="submit" value="Search">
 </form>

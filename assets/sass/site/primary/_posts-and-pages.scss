@@ -402,6 +402,62 @@ height: auto; */
 		width: 1100px;
 	}
 }
+section.tab-buttons {
+	background-color: #000;
+	color: #fff;
+	padding: 30px 0;
+	overflow: hidden;
+	h3 {
+			font-size: 30px;
+			color: #fff;
+		}
+	.col {
+		width: 33%;
+		float: left;
+		text-align: center;
+		overflow: hidden;
+		margin-bottom: 30px;
+
+	}
+	.icon {
+		width: 80px;
+		height:  80px;
+		margin: 10px auto;
+		text-align: center;
+	}
+	i {
+		font-size: 5.8vw;
+		margin: 0px auto;
+		text-align: center;
+		@include transition(all .2s ease);
+		transform: scale(1);
+		
+	}
+	a {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+		&:hover {
+			
+				i {
+					transform: scale(1.2);
+				}
+			
+		}
+	}
+	.quick-search {
+		clear: both;
+		width: 70%;
+		margin: 30px auto;
+		border-top: 1px solid rgba(255,255,255,.5);
+		padding: 20px 0;
+	}
+	input.right {
+		float: right;
+	}
+
+}
+
 #find-box .responsive-tabs-wrapper {
 	margin-bottom: 0;
 }
