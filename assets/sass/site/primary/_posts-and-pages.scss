@@ -353,7 +353,7 @@ height: auto; */
 }
 #page-right-column .agent-profile-box {
 	width: 184px;
-	height: 275px;
+	// height: 275px;
 }
 #features-row {
 	width: 100%;
@@ -873,7 +873,7 @@ section.tab-buttons {
 }
 #home-agents h2 {
 	width: 100%;
-	height: 32px;
+	// height: 32px;
 	float: left;
 	background-color: #239BCB;
 	padding-top: 10px;
@@ -893,14 +893,17 @@ section.tab-buttons {
 	text-decoration: none;
 }
 #home-agents .agent-profile-box {
-	height: 279px;
+	// height: 279px;
+	img {
+		width: 100%;
+	}
 }
 #home-agents .agent-profile-box-content {
 	height: 42px;
 }
 #agents-box {
 	width: 186px;
-	height: 279px;
+	// height: 279px;
 	float: right;
 	background-color: #239BCB;
 	color: #ffffff;
@@ -1687,14 +1690,14 @@ hr {
 }
 .agent-photo img {
 	width: 100%;
-	height: 237px;
+	// height: 237px;
 	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
 	filter: grayscale(100%);
 	filter: gray;
 }
 .agent-photo img:hover {
 	width: 100%;
-	height: 237px;
+	// height: 237px;
 	-moz-filter: grayscale(0);
 	-ms-filter: grayscale(0);
 	-o-filter: grayscale(0);
