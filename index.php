@@ -9,12 +9,16 @@
 remove_all_filters('posts_orderby');
 // Query the Post type Slides
 $querySlides = array(
-'post_type' => 'post',
+'post_type' => 'community',
 'posts_per_page' => '-1',
-'category_name' => 'featured',
 'orderby'        => 'rand',
-//'order' => 'ASC'
-
+'tax_query' => array(
+    array(
+      'taxonomy' => 'neighborhood', // your custom taxonomy
+      'field' => 'slug',
+      'terms' => array( 'featured' ) // the terms (categories) you created
+    )
+  ),
 );
 // The Query
 

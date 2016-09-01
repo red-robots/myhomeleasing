@@ -1493,7 +1493,7 @@ input{border-radius:5px;color:#000}
 #home-wrapper{width:100%;margin-left:auto;margin-right:auto}
 @media screen and (min-width:1200px){#home-wrapper{width:1120px}
 }#home-row1{width:100%;float:left;border-bottom:19px solid #000}
-#home-slider{width:100%;height:613px;float:left;position:relative}
+#home-slider{width:100%;margin:0;float:left;position:relative;overflow:hidden}
 #mortgage-calc{padding:5% 8%;width:84%}
 .calculator{border-style:solid;border-color:#fff;border-width:0;border-top:0;border-bottom:0;border-left:0;border-right:0;border:solid}
 blockquote{width:223px;padding-left:20px;padding-right:20px;padding-bottom:40px;float:right;font-size:19px;color:#118bbf;font-weight:bold;text-align:center;line-height:20px;margin-right:0;margin-top:0}
@@ -1638,7 +1638,7 @@ ol.pings h3{font-size:.9em}
 @media screen and (min-width:1200px){#features{width:675px}
 }#features-agents{width:265px;float:right;margin-left:25px;margin-top:30px}
 #features-agents h2{text-align:center}
-#find-box-wrapper{width:100%;position:absolute;left:0;bottom:0;z-index:12000;color:#fff}
+#find-box-wrapper{width:100%;float:left;clear:both;z-index:12000;color:#fff}
 #find-box{width:100%;margin-left:auto;margin-right:auto}
 @media screen and (min-width:1200px){#find-box{width:1100px}
 }section.tab-buttons{background-color:#000;color:#fff;padding:30px 0;overflow:hidden}

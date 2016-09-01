@@ -676,9 +676,11 @@ input {
 }
 #home-slider {
 	width: 100%;
-	height: 613px;
+	// height: 613px;
+	margin: 0;
 	float: left;
 	position: relative;
+	overflow: hidden;
 }
 #mortgage-calc {
 	padding: 5% 8%;

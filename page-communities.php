@@ -33,9 +33,13 @@
         <?php //wp_list_cats('sort_column=name') ?>
       </ul>
     </div> -->
-
-    <?php 
-      $the_query = new WP_Query( 'showposts=-1' ); 
+<?php 
+$args = array(
+  'posts_per_page' => -1,
+  'post_type' => 'community'
+  );
+$the_query = new WP_Query( $args ); 
+      
       if ($the_query -> have_posts()) : ?>
         <section class="communities">
           <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>

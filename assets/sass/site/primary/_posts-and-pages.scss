@@ -383,9 +383,11 @@ height: auto; */
 #find-box-wrapper {
 	width: 100%;
 	// height: 192px;
-	position: absolute;
-	left: 0px;
-	bottom: 0;
+	// position: absolute;
+	// left: 0px;
+	// bottom: 0;
+	float: left;
+	clear: both;
 	z-index: 12000;
 	color: #ffffff;
 }
