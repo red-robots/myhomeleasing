@@ -226,7 +226,7 @@
 	text-decoration: none;
 }
 #community-more-info-button a:hover {
-	background-color: #239BCB;
+	background-color: $color-mhl-blue;
 }
 .communities-agents-photo {
 	width: 197px;
@@ -248,7 +248,7 @@ height: auto; */
 .community-realtor h2 {
 	width: 100%;
 	float: left;
-	background-color: #239BCB;
+	background-color: $color-mhl-blue;
 	padding-top: 9px;
 	padding-bottom: 7px;
 	font-size: 14px;
@@ -347,7 +347,7 @@ height: auto; */
 }
 #page-right-column .agent-profile-box-content {
 	width: 100%;
-	height: 28px;
+	// height: 28px;
 	padding-top: 10px;
 	text-align: center;
 }
@@ -412,7 +412,7 @@ section.tab-buttons {
 			color: #fff;
 		}
 	.col {
-		width: 33%;
+		width: 25%;
 		float: left;
 		text-align: center;
 		overflow: hidden;
@@ -420,13 +420,13 @@ section.tab-buttons {
 
 	}
 	.icon {
-		width: 80px;
-		height:  80px;
+		width: 55px;
+		height:  55px;
 		margin: 10px auto;
 		text-align: center;
 	}
 	i {
-		font-size: 5.8vw;
+		font-size: 4vw;
 		margin: 0px auto;
 		text-align: center;
 		@include transition(all .2s ease);
@@ -814,7 +814,6 @@ section.tab-buttons {
 }
 #home-row4 {
 	width: 100%;
-	height: 498px;
 	float: left;
 	background-color: #ffffff;
 }
@@ -835,7 +834,7 @@ section.tab-buttons {
 		width: 1130px;
 	}
 }
-#home-row4-content h2 {
+#home-row4-content h2.section-title {
 	text-align: center;
 	font-size: 20px;
 	color: #000000;
@@ -875,7 +874,7 @@ section.tab-buttons {
 	width: 100%;
 	// height: 32px;
 	float: left;
-	background-color: #239BCB;
+	background-color: $color-mhl-blue;
 	padding-top: 10px;
 	font-size: 15px!important;
 	text-align: center;
@@ -899,13 +898,13 @@ section.tab-buttons {
 	}
 }
 #home-agents .agent-profile-box-content {
-	height: 42px;
+	// height: 42px;
 }
 #agents-box {
 	width: 186px;
 	// height: 279px;
 	float: right;
-	background-color: #239BCB;
+	background-color: $color-mhl-blue;
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: normal;
@@ -948,7 +947,7 @@ section.tab-buttons {
 	text-decoration: none;
 }
 #view-all-agents-box a:hover {
-	color: #239BCB;
+	color: $color-mhl-blue;
 	text-decoration: none;
 	border: 1px solid #0099CF;
 }
@@ -1137,7 +1136,7 @@ section.tab-buttons {
 #communities-heading-link a:hover {
 	color: #ffffff;
 	text-decoration: none;
-	background-color: #239BCB;
+	background-color: $color-mhl-blue;
 }
 section.community {
 	width: 100%;
@@ -1372,7 +1371,7 @@ section.communities {
 }
 .agent-button-link a {
 	width: 100%;
-	background-color: #3855A3;
+	background-color: $color-mhl-blue;
 	padding-top: 14px;
 	padding-bottom: 14px;
 	text-align: center;
@@ -1404,7 +1403,7 @@ section.communities {
 }
 .agent-button a {
 	width: 100%;
-	background-color: #3855A3;
+	background-color: $color-mhl-blue;
 	height: 16px;
 	padding-top: 14px;
 	padding-bottom: 14px;
@@ -1668,7 +1667,7 @@ hr {
 	h2 {
 		font-size: 15px;
 		color: #fff;
-		margin: 0 0 20px 0;
+		margin: 0 0 0px 0;
 	}
 
 }

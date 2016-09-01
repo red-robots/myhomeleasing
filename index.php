@@ -89,6 +89,12 @@ $the_query = new WP_Query( $querySlides );
           <h3>For Renters</h3>
         </a>
       </div><!-- col -->
+       <div class="col">
+        <a href="http://myhomeleasing.localhomesearch.net/idx/?op=query&stype=area&_srf=1&subv2=&proptype=rnt&street=&city=&zip=&price_min=&price_max=&beds=&baths=&sqft=&acreage=&furn=on">
+          <div class="icon"><i class="fa fa-television" aria-hidden="true"></i></div>
+          <h3>Furnished Rentals</h3>
+        </a>
+      </div><!-- col -->
       <div class="col">
         <a href="<?php bloginfo('url'); ?>/property-management-services/">
           <div class="icon"><i class="fa fa-check" aria-hidden="true"></i></div>
@@ -216,7 +222,7 @@ We’d like to be your realtor for this home and the next.
 </div>
 <div id="home-row4">
 <div id="home-row4-content">
-<h2>OUR AGENTS</h2>
+<h2 class="section-title">OUR AGENTS</h2>
 <!-- -->
 <div id="home-agents">
 <?php
