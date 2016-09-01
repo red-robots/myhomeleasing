@@ -22,9 +22,9 @@ height:100%;
 
 /* CAN EDIT*/
 body{
-background:#EFEFEF;
+background:#239BCB;
 font-family:tahoma, arial;
-color:#000;
+color:#fff;
 }
 
 a {
@@ -59,7 +59,8 @@ vertical-align: top;
 height: 71px;
 }
 #chatTitle{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/title_shade.png") repeat-x scroll 0 0 transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/title_shade.png") repeat-x scroll 0 0 transparent;*/
+background-color: #239BCB;
 height: 71px;
 }
 
