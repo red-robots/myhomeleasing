@@ -195,7 +195,6 @@ function catch_that_image() {
 
 
 
-
 // Changing WordPress admin Menu Names
 function change_post_menu_label() {
     global $menu;
@@ -223,68 +222,6 @@ function change_post_object_label() {
     }
     add_action( 'init', 'change_post_object_label' );
     add_action( 'admin_menu', 'change_post_menu_label' );
-
-/* Custom Post Types */
- 
-add_action('init', 'js_custom_init');
-function js_custom_init() 
-{
-	
-	// Register the Homepage Slides
-  
-     $labels = array(
-	'name' => _x('Communities', 'post type general name'),
-    'singular_name' => _x('Community', 'post type singular name'),
-    'add_new' => _x('Add New', 'Community'),
-    'add_new_item' => __('Add New Community'),
-    'edit_item' => __('Edit Communities'),
-    'new_item' => __('New Community'),
-    'view_item' => __('View Communities'),
-    'search_items' => __('Search Communities'),
-    'not_found' =>  __('No Communities found'),
-    'not_found_in_trash' => __('No Communities found in Trash'), 
-    'parent_item_colon' => '',
-    'menu_name' => 'Communities'
-  );
-  $args = array(
-	'labels' => $labels,
-    'public' => true,
-    'publicly_queryable' => true,
-    'show_ui' => true, 
-    'show_in_menu' => true, 
-    'query_var' => true,
-    'rewrite' => true,
-    'capability_type' => 'post',
-    'has_archive' => false, 
-    'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
-    'menu_position' => 20,
-    'supports' => array('title','editor','custom-fields','thumbnail'),
-	
-  ); 
-  register_post_type('community',$args); // name used in query
-
-
-  /*
-##############################################
-	Custom Taxonomies
-*/
-add_action( 'init', 'build_taxonomies', 0 );
- 
-function build_taxonomies() {
-// cusotm tax
-    register_taxonomy( 'neighborhood', 'community',
-	 array( 
-	'hierarchical' => true, // true = acts like categories false = acts like tags
-	'label' => 'Neighborhoods', 
-	'query_var' => true, 
-	'rewrite' => true ,
-	'show_admin_column' => true,
-	'public' => true,
-	'rewrite' => array( 'slug' => 'neighborhood' ),
-	'_builtin' => true
-	) );
-	
-} // End build taxonomies
 
 
 /*
@@ -365,67 +302,67 @@ add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
 
 // /* Custom Post Types */
  
-// add_action('init', 'js_custom_init');
-// function js_custom_init() 
-// {
+add_action('init', 'js_custom_init');
+function js_custom_init() 
+{
 	
-// 	// Register the Homepage Slides
+	// Register the Homepage Slides
   
-//      $labels = array(
-// 	'name' => _x('Communities', 'post type general name'),
-//     'singular_name' => _x('Community', 'post type singular name'),
-//     'add_new' => _x('Add New', 'Community'),
-//     'add_new_item' => __('Add New Community'),
-//     'edit_item' => __('Edit Communities'),
-//     'new_item' => __('New Community'),
-//     'view_item' => __('View Communities'),
-//     'search_items' => __('Search Communities'),
-//     'not_found' =>  __('No Communities found'),
-//     'not_found_in_trash' => __('No Communities found in Trash'), 
-//     'parent_item_colon' => '',
-//     'menu_name' => 'Communities'
-//   );
-//   $args = array(
-// 	'labels' => $labels,
-//     'public' => true,
-//     'publicly_queryable' => true,
-//     'show_ui' => true, 
-//     'show_in_menu' => true, 
-//     'query_var' => true,
-//     'rewrite' => true,
-//     'capability_type' => 'post',
-//     'has_archive' => false, 
-//     'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
-//     'menu_position' => 20,
-//     'supports' => array('title','editor','custom-fields','thumbnail'),
+     $labels = array(
+	'name' => _x('Communities', 'post type general name'),
+    'singular_name' => _x('Community', 'post type singular name'),
+    'add_new' => _x('Add New', 'Community'),
+    'add_new_item' => __('Add New Community'),
+    'edit_item' => __('Edit Communities'),
+    'new_item' => __('New Community'),
+    'view_item' => __('View Communities'),
+    'search_items' => __('Search Communities'),
+    'not_found' =>  __('No Communities found'),
+    'not_found_in_trash' => __('No Communities found in Trash'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Communities'
+  );
+  $args = array(
+	'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'has_archive' => false, 
+    'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
+    'menu_position' => 20,
+    'supports' => array('title','editor','custom-fields','thumbnail'),
 	
-//   ); 
-//   register_post_type('community',$args); // name used in query
+  ); 
+  register_post_type('community',$args); // name used in query
   
-//   // Add more between here
+  // Add more between here
   
-//   // and here
+  // and here
   
-//   } // close custom post type
+  } // close custom post type
 
-//   /*
-// ##############################################
-// 	Custom Taxonomies
-// */
-// add_action( 'init', 'build_taxonomies', 0 );
+  /*
+##############################################
+	Custom Taxonomies
+*/
+add_action( 'init', 'build_taxonomies', 0 );
  
-// function build_taxonomies() {
-// // cusotm tax
-//     register_taxonomy( 'neighborhood', 'community',
-// 	 array( 
-// 	'hierarchical' => true, // true = acts like categories false = acts like tags
-// 	'label' => 'Neighborhoods', 
-// 	'query_var' => true, 
-// 	'rewrite' => true ,
-// 	'show_admin_column' => true,
-// 	'public' => true,
-// 	'rewrite' => array( 'slug' => 'neighborhood' ),
-// 	'_builtin' => true
-// 	) );
+function build_taxonomies() {
+// cusotm tax
+    register_taxonomy( 'neighborhood', 'community',
+	 array( 
+	'hierarchical' => true, // true = acts like categories false = acts like tags
+	'label' => 'Neighborhoods', 
+	'query_var' => true, 
+	'rewrite' => true ,
+	'show_admin_column' => true,
+	'public' => true,
+	'rewrite' => array( 'slug' => 'neighborhood' ),
+	'_builtin' => true
+	) );
 	
-// } // End build taxonomies
+} // End build taxonomies
