@@ -195,39 +195,96 @@ function catch_that_image() {
 
 
 
+
 // Changing WordPress admin Menu Names
 function change_post_menu_label() {
     global $menu;
     global $submenu;
-    $menu[5][0] = 'Communities';
-    $submenu['edit.php'][5][0] = 'Communities';
-    $submenu['edit.php'][10][0] = 'Add a Communities Post';
+    $menu[5][0] = 'Blog';
+    $submenu['edit.php'][5][0] = 'Blog';
+    $submenu['edit.php'][10][0] = 'Add a Blog Post';
    // $submenu['edit.php'][15][0] = 'Status'; // Change name for categories
     //$submenu['edit.php'][16][0] = 'Labels'; // Change name for tags
     echo '';
 }
-
 function change_post_object_label() {
         global $wp_post_types;
         $labels = &$wp_post_types['post']->labels;
-        $labels->name = 'Communities';
-        $labels->singular_name = 'Communities';
-        $labels->add_new = 'Add a Communities Post';
-        $labels->add_new_item = 'Add a Communities Post';
-        $labels->edit_item = 'Edit Communities';
-        $labels->new_item = 'Communities';
-        $labels->view_item = 'View Communities';
-        $labels->search_items = 'Search Communities';
+        $labels->name = 'Blog';
+        $labels->singular_name = 'Blog';
+        $labels->add_new = 'Add a Blog Post';
+        $labels->add_new_item = 'Add a Blog Post';
+        $labels->edit_item = 'Edit Blog';
+        $labels->new_item = 'Blog';
+        $labels->view_item = 'View Blog';
+        $labels->search_items = 'Search Blog';
         $labels->not_found = 'No posts found';
         $labels->not_found_in_trash = 'No posts found in Trash';
     }
     add_action( 'init', 'change_post_object_label' );
     add_action( 'admin_menu', 'change_post_menu_label' );
 
+/* Custom Post Types */
+ 
+add_action('init', 'js_custom_init');
+function js_custom_init() 
+{
+	
+	// Register the Homepage Slides
+  
+     $labels = array(
+	'name' => _x('Communities', 'post type general name'),
+    'singular_name' => _x('Community', 'post type singular name'),
+    'add_new' => _x('Add New', 'Community'),
+    'add_new_item' => __('Add New Community'),
+    'edit_item' => __('Edit Communities'),
+    'new_item' => __('New Community'),
+    'view_item' => __('View Communities'),
+    'search_items' => __('Search Communities'),
+    'not_found' =>  __('No Communities found'),
+    'not_found_in_trash' => __('No Communities found in Trash'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Communities'
+  );
+  $args = array(
+	'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'has_archive' => false, 
+    'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
+    'menu_position' => 20,
+    'supports' => array('title','editor','custom-fields','thumbnail'),
+	
+  ); 
+  register_post_type('community',$args); // name used in query
 
 
-
-
+  /*
+##############################################
+	Custom Taxonomies
+*/
+add_action( 'init', 'build_taxonomies', 0 );
+ 
+function build_taxonomies() {
+// cusotm tax
+    register_taxonomy( 'neighborhood', 'community',
+	 array( 
+	'hierarchical' => true, // true = acts like categories false = acts like tags
+	'label' => 'Neighborhoods', 
+	'query_var' => true, 
+	'rewrite' => true ,
+	'show_admin_column' => true,
+	'public' => true,
+	'rewrite' => array( 'slug' => 'neighborhood' ),
+	'_builtin' => true
+	) );
+	
+} // End build taxonomies
 
 
 /*
