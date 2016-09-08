@@ -1650,6 +1650,7 @@ section.tab-buttons a{text-decoration:none;color:#fff;display:block}
 section.tab-buttons a:hover i{-webkit-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}
 section.tab-buttons .quick-search{clear:both;width:70%;margin:30px auto;border-top:1px solid rgba(255,255,255,0.5);padding:20px 0}
 section.tab-buttons input.right{float:right}
+section.tab-buttons input.qs-sub{margin:10px 5px 5px;background-color:#334ea5;color:#fff;border:2px solid rgba(255,255,255,0.8);-webkit-transition:all ease .3s;transition:all ease .3s}
 #find-box .responsive-tabs-wrapper{margin-bottom:0}
 .find-box-content p{margin-top:0}
 #find-box .responsive-tabs .responsive-tabs__panel{background-color:transparent !important;background-image:url(images/bg-find-box.png);background-repeat:repeat;border:0;padding-top:25px !important;padding-left:30px !important;padding-right:20px !important;padding-bottom:25px !important;border-radius:5px 5px 0 0;border-top:0 !important}
@@ -1890,8 +1891,9 @@ div.content_tab{display:none}
 #ul_tabs{clear:both;padding:0;margin:0}
 .lh{padding:5px;background-color:gray;list-style:none;width:88px;height:25px;float:left;border:1px solid #fffffa;text-align:center}
 li.lh:hover{background-color:white;cursor:pointer}
-.form-col{width:auto;float:left;display:inline-block;margin-right:50px}
+.form-col{width:auto;float:left;display:inline-block;margin-right:30px}
 .form-col input{margin:0 0 5px 0}
+input.pool{width:25px}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

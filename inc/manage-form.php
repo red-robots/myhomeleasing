@@ -5,13 +5,13 @@
 <input type="hidden" name="_srf" value="1">
 
 <div class="form-col">
-	Property Type:<br/>
-		<select name="proptype">
-			<option value="res">Single-family Homes</option>
-			<option value="cnd">Condos/Townhomes</option>
-			<option value="mul">Multifamily</option>
-			<option value="lnd">Land</option>
-		</select>
+
+Property Type:<br/><select name="proptype">
+<option value="res">Single-family Homes</option>
+<option value="cnd">Condos/Townhomes</option>
+<option value="mul">Multifamily</option>
+<option value="lnd">Land</option>
+</select>
 	<br/>
 
 
@@ -28,60 +28,59 @@ if (typeof jQuery == 'undefined') {
   <script src="http://img.davisfarrell.com/js/localdata.js" type="text/javascript"></script>
   <script src="http://img.davisfarrell.com/js/autosub_so.js" type="text/javascript"></script>
 
-		Area:<br/>
-		<select name="area">
-			<option value="">Choose an area</option>
-			<option value="1"> N Mecklenburg
-			<option value="2"> NE Mecklenburg
-			<option value="3"> E Mecklenburg
-			<option value="4"> SE Mecklenburg
-			<option value="sc"> S Mecklenburg
-			<option value="7"> SW Mecklenburg
-			<option value="8"> W Mecklenburg
-			<option value="9"> NW Mecklenburg
-			<option value="99"> Uptown Charlotte
-			<option value="13"> Lake Norman
-			<option value="15"> Lake Wylie
-			<option value="42"> Mtn. Island Lake
-			<option value="10"> Union County
-			<option value="11"> Cabarrus County
-			<option value="12"> Iredell County
-			<option value="14"> Lincoln County
-			<option value="16"> Gaston County
-			<option value="17"> York County
-			<option value="24"> Lancaster County
-			<option value="35"> Chester County
-			<option value="">-----</option>
-			<option value="20"> Alexander County
-			<option value="44"> Alleghany County
-			<option value="25"> Anson County
-			<option value="40"> Ashe County
-			<option value="38"> Avery County
-			<option value="27"> Burke County
-			<option value="26"> Caldwell County
-			<option value="29"> Catawba County
-			<option value="36"> Chesterfield County
-			<option value="22"> Cleveland County
-			<option value="28"> Davidson County
-			<option value="31"> Davie County
-			<option value="51"> Forsyth County
-			<option value="50"> McDowell County
-			<option value="49"> Mitchell County
-			<option value="30"> Montgomery County
-			<option value="33"> Moore County
-			<option value="47"> Polk County
-			<option value="34"> Randolph County
-			<option value="32"> Richmond County
-			<option value="46"> Rockingham County
-			<option value="21"> Rowan County
-			<option value="45"> Rutherford County
-			<option value="23"> Stanly County
-			<option value="41"> Surry County
-			<option value="43"> Watauga County
-			<option value="39"> Wilkes County
-			<option value="37"> Yadkin County
-			<option value="48"> Yancey County
-		</select><br/>
+		Area:<br/><select name="area">
+<option value="">Choose an area</option>
+<option value="1"> N Mecklenburg
+<option value="2"> NE Mecklenburg
+<option value="3"> E Mecklenburg
+<option value="4"> SE Mecklenburg
+<option value="sc"> S Mecklenburg
+<option value="7"> SW Mecklenburg
+<option value="8"> W Mecklenburg
+<option value="9"> NW Mecklenburg
+<option value="99"> Uptown Charlotte
+<option value="13"> Lake Norman
+<option value="15"> Lake Wylie
+<option value="42"> Mtn. Island Lake
+<option value="10"> Union County
+<option value="11"> Cabarrus County
+<option value="12"> Iredell County
+<option value="14"> Lincoln County
+<option value="16"> Gaston County
+<option value="17"> York County
+<option value="24"> Lancaster County
+<option value="35"> Chester County
+<option value="">-----</option>
+<option value="20"> Alexander County
+<option value="44"> Alleghany County
+<option value="25"> Anson County
+<option value="40"> Ashe County
+<option value="38"> Avery County
+<option value="27"> Burke County
+<option value="26"> Caldwell County
+<option value="29"> Catawba County
+<option value="36"> Chesterfield County
+<option value="22"> Cleveland County
+<option value="28"> Davidson County
+<option value="31"> Davie County
+<option value="51"> Forsyth County
+<option value="50"> McDowell County
+<option value="49"> Mitchell County
+<option value="30"> Montgomery County
+<option value="33"> Moore County
+<option value="47"> Polk County
+<option value="34"> Randolph County
+<option value="32"> Richmond County
+<option value="46"> Rockingham County
+<option value="21"> Rowan County
+<option value="45"> Rutherford County
+<option value="23"> Stanly County
+<option value="41"> Surry County
+<option value="43"> Watauga County
+<option value="39"> Wilkes County
+<option value="37"> Yadkin County
+<option value="48"> Yancey County
+</select><br/>
 </div><!-- form col -->
 
 <div class="form-col">
@@ -164,7 +163,22 @@ Street name: <br/>
 <input type="text" name="street" size="15"><br/>
 </div><!-- form col -->
 
+
+<div class="form-col">
+Features:<br />
+	<input type="checkbox" name="has_basement" value="1"> Basement<br/>
+	<input type="checkbox" name="has_fireplace" value="1"> Fireplace<br/>
+	<input type="checkbox" name="has_garage" value="1"> Garage<br/>
+	<input type="checkbox" name="has_golf" value="1"> Golf<br/>
+	<input type="checkbox" name="has_master_down" value="1"> Master Downstairs<br/>
+	<input type="checkbox" name="new_construction" value="1"> New Construction<br/>
+	<input typ="checkbox" name="has_pool" value="1" class="pool"> Pool<br/>
+	<input type="checkbox" name="is_waterfront" value="1"> Waterfront Property<br/>
+	<input type="checkbox" name="is_waterview" value="1"> Water view<br/>
+</div><!-- form col -->
 <!-- <div class="clear"></div> -->
 
-<input class="right" type="submit" value="Search">
+<input class="right qs-sub" type="submit" value="Search">
 </form>
+
+

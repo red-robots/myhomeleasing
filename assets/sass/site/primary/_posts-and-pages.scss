@@ -457,6 +457,13 @@ section.tab-buttons {
 	input.right {
 		float: right;
 	}
+	input.qs-sub {
+		margin: 10px 5px 5px;
+	    background-color: #334EA5;
+	    color: #fff;
+	    border: 2px solid rgba(255, 255, 255, 0.8);
+	    @include transition(all ease .3s);
+	}
 
 }
 
@@ -1913,9 +1920,12 @@ li.lh:hover {
 	width: auto;
 	float: left;
 	display: inline-block;
-	margin-right: 50px;
+	margin-right: 30px;
 
 	input {
 		margin: 0 0 5px 0;
 	}
+}
+input.pool {
+	width: 25px;
 }
