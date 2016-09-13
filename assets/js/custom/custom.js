@@ -9,6 +9,8 @@ jQuery(document).ready(function ($) {
     $(".div2").delay( 3500 ).fadeIn(2400);
     $("#div3").delay( 4800 ).fadeIn(3000);
 
+    $('.js-blocks').matchHeight();
+
 	// front page slider 
 	$('.flexslider').flexslider({
 		animation: "fade",

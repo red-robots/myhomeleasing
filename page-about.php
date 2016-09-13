@@ -56,7 +56,7 @@
 
 <div class="about-office">
 
-<div class="about-office-image">
+<div class="about-office-image js-blocks">
 <?php
 $image = get_field('office_photo', 'option');
   $url = $image['url'];
@@ -75,7 +75,7 @@ if( !empty($image) ): ?>
 <?php endif; ?>
 </div>
 
-<div class="about-office-content">
+<div class="about-office-content  js-blocks">
 <div class="about-office-text"><h2><?php the_field('office_name', 'option'); ?></h2>
 
 <?php the_field('office_address', 'option'); ?>
@@ -100,7 +100,7 @@ if( !empty($image) ): ?>
 
 <div class="about-office">
 
-<div class="about-office-image">
+<div class="about-office-image js-blocks">
 <?php
 $image = get_field('office_photo2', 'option');
   $image = get_field('office_photo2', 'option');
@@ -121,7 +121,7 @@ if( !empty($image) ): ?>
 </div>
 
 
-<div class="about-office-content">
+<div class="about-office-content js-blocks">
 <div class="about-office-text"><h2><?php the_field('office_name2', 'option'); ?></h2>
 
 <?php the_field('office_address2', 'option'); ?>
@@ -143,7 +143,7 @@ if( !empty($image) ): ?>
 
 <div class="about-office">
 
-<div class="about-office-image">
+<div class="about-office-image js-blocks">
 <?php
 $image = get_field('office_photo3', 'option');
   $image = get_field('office_photo3', 'option');
@@ -165,7 +165,7 @@ if( !empty($image) ): ?>
 
 
 
-<div class="about-office-content">
+<div class="about-office-content js-blocks">
 <div class="about-office-text"><h2><?php the_field('office_name3', 'option'); ?></h2>
 
 <?php the_field('office_address3', 'option'); ?>

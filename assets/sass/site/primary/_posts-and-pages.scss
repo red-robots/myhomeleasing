@@ -776,50 +776,66 @@ section.tab-buttons {
 	padding-bottom: 25px;
 	margin-bottom: 25px;
 }
-#home-row3-content-box1 {
+.home-row3-content-box {
 	width: 100%;
-	float: left;
-	margin-right: 20px;
-	margin-left: 15px;
+	// width: auto;
+	display: inline-block;
+	margin: 10px auto;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 33.3333333333%;
+    	margin: 0;
+    	float: left;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 295px;
+		// width: 295px;
 	}
+	a {
+		color: #000000;
+		text-decoration: none;
+		@include transition(all .3s ease);
+		
+		&:hover {
+			color: #EDEDED;
+			text-decoration: none;
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+.home-icon {
+	width: 125px;
+	height: 125px;
+	margin: 10px auto;
+	img {
+		transform: scale(1);
+		@include transition(all .3s ease);
+	}
+
+	@media screen and (min-width: $tabwidth) {
+		// float: left;
+		// width: 30%;
+	}
+
+	@media screen and (min-width: $deskwidth) {
+		// width: 295px;
+	}
+
+
 }
 .home-row3-content-link {
 	padding-top: 25px;
-}
-.home-row3-content-link a:link {
-	color: #000000;
-	text-decoration: none;
-}
-.home-row3-content-link a:visited {
-	color: #000000;
-	text-decoration: none;
-}
-.home-row3-content-link a:hover {
-	color: #EDEDED;
-	text-decoration: none;
-}
-#home-row3-content-box2 {
-	width: 275px;
-	float: left;
-	margin-right: 20px;
-}
-#home-row3-content-box3 {
 	width: 100%;
-	float: left;
-	margin-right: 20px;
+	text-align: center;
+
 	@media screen and (min-width: $tabwidth) {
-
+		// width: 66%;
+		// float:  right;
+		// text-align: left;
 	}
 
-	@media screen and (min-width: $deskwidth) {
-		width: 315px;
-	}
+
 }
 #home-row4 {
 	width: 100%;
@@ -836,11 +852,11 @@ section.tab-buttons {
 	color: #000000;
 	font-weight: 700;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 90%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 1130px;
+		// width: 1130px;
 	}
 }
 #home-row4-content h2.section-title {
@@ -858,12 +874,78 @@ section.tab-buttons {
 	margin-right: 10px;
 	overflow: hidden;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 60%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 915px;
+		// width: 915px;
+		width: 60%;
 	}
+	.agent-profile-box {
+		width: 100%;
+		float: left;
+		position: relative;
+		margin: 0 0 30px 0;
+		
+		z-index: 50;
+		@media screen and (min-width: $tabwidth) {
+			width: 45%;
+			margin: 2%;
+		}
+
+		@media screen and (min-width: $midwidth) {
+			// width: 184px;
+			width: 20%;
+			margin: 0 2.2% 20px 0;
+		}
+		a {
+			color: #ffffff;
+			text-decoration: none;
+			
+		}
+		img {
+			width: 100%;
+			
+			filter: gray; /* IE6-9 */
+	  	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+	  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+
+			 
+		
+		}
+		.link a {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 52;
+
+			
+		}
+
+		&:hover img {
+			filter: none;
+			-webkit-filter: grayscale(0);
+		}
+
+		h2 {
+			width: 100%;
+			// height: 32px;
+			float: left;
+			background-color: #239BCB;
+			padding-top: 10px;
+			font-size: 15px;
+			text-align: center;
+
+			@media screen and (min-width: $tabwidth) {
+				font-size: 13px;
+			}
+			@media screen and (min-width: $deskwidth) {
+				font-size: 15px;
+			}
+		}
+	} // Agent profile box 
 }
 .home-agents-photo {
 	width: 186px;
@@ -910,14 +992,18 @@ section.tab-buttons {
 	// height: 42px;
 }
 #agents-box {
-	width: 186px;
+	width: 100%;
 	// height: 279px;
 	float: right;
-	background-color: $color-mhl-blue;
+	background-color: #239BCB;
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: normal;
 	padding: 20px;
+	@media screen and (min-width: $tabwidth) {
+		// width: 186px;
+		width: 33%;
+	}
 }
 #agents-box img {
 	float: right;
@@ -1065,6 +1151,10 @@ section.tab-buttons {
 	float: left;
 	width: 100%;
 	margin-top: 45px;
+	padding: 20px;
+	@media screen and (min-width: $deskwidth) {
+		padding: 0;
+	}
 }
 #communities-heading-photo {
 	width: 100%;
@@ -1486,47 +1576,53 @@ hr {
 	width: 100%;
 	float: left;
 	padding-top: 30px;
-}
-#about-links h2 {
-	font-size: 30px;
-	font-weight: bold;
-	border-bottom: 4px solid #159ACD;
-	display: block;
-	padding-bottom: 6px;
-}
-#about-links a:link {
-	color: #000000;
-	text-decoration: none;
-}
-#about-links a:visited {
-	color: #000000;
-	text-decoration: none;
-}
-#about-links a:hover {
-	color: #159ACD;
-	text-decoration: none;
-}
-#about-links p {
-	margin-top: 5px!important;
+
+	h2 {
+		font-size: 30px;
+		font-weight: bold;
+		border-bottom: 4px solid #159ACD;
+		display: block;
+		padding-bottom: 6px;
+	}
+	a {
+		color: #000000;
+		text-decoration: none;
+		&:hover {
+			color: #159ACD;
+			text-decoration: none;
+		}
+	}
+	p {
+		margin-top: 5px!important;
+	}
 }
 .about-link1 {
-	width: 30%;
+	width: 100%;
 	float: left;
 	margin-right: 2%;
+	img {width: 100%;}
+
+	@media screen and (min-width: $tabwidth) {
+		width: 30%;
+	}
 }
 .about-link2 {
-	width: 30%;
+	width: 100%;
 	float: left;
+	img {width: 100%;}
+	@media screen and (min-width: $tabwidth) {
+		width: 30%;
+	}
 }
 #page-right-column {
 	width: 100%;
 	float: right;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 30%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 400px;
+		// width: 400px;
 	}
 }
 #page-right-column .infusion-field {
@@ -1545,28 +1641,38 @@ hr {
 }
 .about-office {
 	width: 100%;
-	/*height: 223px;*/
+	// height: 223px;
 	position: relative;
 	float: left;
 	margin-bottom: 20px;
-	background-color: #0099CF;
+	
 }
 .about-office-image {
 	width: 100%;
 	float: left;
 	line-height: 0;
-	@media screen and (min-width: $tabwidth) {
-
+	overflow: hidden;
+	& img {
+		width: 100%;
+		line-height: 0;
+		height: 100%;
+	}
+	@media screen and (min-width: $midwidth) {
+		// width: 180px;
+		float: left;
+		display: none;
+		height: 120px;
+		min-height: 230px;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 205px;
-		float: left;
+		// width: 205px;
+		width: 40%;
+		display: block;
+		height: auto
+		
 
-		& img {
-			width: 100%;
-			line-height: 0;
-		}
+		
 	}
 }
 .about-office-content {
@@ -1574,13 +1680,24 @@ hr {
 	height: 100%;
 	float: left;
 	font-size: 14px;
+	background-color: #0099CF;
+	position: relative;
+	min-height: 250px;
 	@media screen and (min-width: $tabwidth) {
+		min-height: 250px;
+	}
+	@media screen and (min-width: $midwidth) {
+		// width: 50%;
+		// width: 165px;
+		float: left;
 
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 195px;
-		float: right;
+		// width: 195px;
+		width: 60%;
+		min-height: auto;
+		
 	}
 }
 .about-office-text {
@@ -1600,36 +1717,24 @@ hr {
 }
 .about-office-contact {
 	width: 100%;
-	padding-top: 14px;
 	float: left;
-	background-color: #3551A3;
 	text-align: left;
-	font-size: 15px;
-	color: #ffffff;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding: 14px 15px 10px 15px;
 	float: left;
 	margin: 5px 0 0 0;
 	clear: both;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 .about-office-contact-padding {
 	
 }
 .about-office-contact a {
-	font-size: 17px;
-}
-.about-office-content a:link {
+	font-size: 15px;
+	padding: 14px 15px 10px 15px;
+	display: block;
 	color: #ffffff;
-	text-decoration: none;
-}
-.about-office-content a:visited {
-	color: #ffffff;
-	text-decoration: none;
-}
-.about-office-content a:hover {
-	color: #ffffff;
-	text-decoration: none;
+	background-color: #3551A3;
 }
 .agent-profile-box {
 	width: 100%;
@@ -1929,3 +2034,61 @@ li.lh:hover {
 input.pool {
 	width: 25px;
 }
+// Chat window
+  .chatwrap {
+    width: 270px;
+    background-color: #334EA5;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 20px;
+    position: relative;
+  }
+  .LHNInviteTitle {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  #Zsmenu  {
+  	display:none;
+  }
+  #Zsmenu .LHNInviteButtons a.LHNInviteAcceptButton {
+    width: auto;
+    display: inline-block;
+    background-color: #fff;
+    color:  #334EA5 !important;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  a.LHNInviteCloseButton {
+    border: #000 solid 2px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    text-decoration: none;
+    line-height: 25px;
+  }
+
+  .LHNInviteButtons {
+    width: 100%;
+    text-align: center;
+  }
+  .LHNInviteMessage {
+    width: 66%;
+    float: right;
+  }
+  .chat-window-person {
+    width: 30%;
+    float: left;
+    // background-color: #000;
+    // height: 200px;
+  }
+  .chat-window-person img {
+    width: 100%;
+  }
+// Chat window

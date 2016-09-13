@@ -211,16 +211,39 @@ We’d like to be your realtor for this home and the next.
 <div id="home-row3-content-heading">Why hire a property manager?</div>
 <?php $recent = new WP_Query("page_id=22"); while($recent->have_posts()) : $recent->the_post();?>
 
-<div id="home-row3-content-box1">
-  <a href="<?php the_field("link_one"); ?>"><img src="<?php bloginfo('template_url'); ?>/images/box1image.png" alt="" border="0"></a>
-  <div class="home-row3-content-link">
-    <a href="<?php the_field("link_one"); ?>"><?php the_field("link_one_text"); ?></a>
-  </div>
-</div>
+  <div id="home-row3-content-box1" class="home-row3-content-box">
+    <a href="<?php the_field("link_one"); ?>">
+      <div class="home-icon">
+        <img src="<?php bloginfo('template_url'); ?>/images/box1image.png" alt="" border="0">
+      </div><!-- home icon -->
+      <div class="home-row3-content-link">
+        <?php the_field("link_one_text"); ?>
+      </div><!-- home-row3-content-link -->
+    </a>
+  </div><!-- home-row3-content-box1 -->
 
-<div id="home-row3-content-box2"><a href="<?php the_field("link_two"); ?>"><img src="<?php bloginfo('template_url'); ?>/images/box2image.png" alt="" border="0"></a><div class="home-row3-content-link"><a href="<?php the_field("link_two"); ?>"><?php the_field("link_two_text"); ?></a></div></div>
+  <div id="home-row3-content-box2" class="home-row3-content-box">
+    <a href="<?php the_field("link_two"); ?>">
+      <div class="home-icon">
+        <img src="<?php bloginfo('template_url'); ?>/images/box2image.png" alt="" border="0">
+      </div><!-- home icon -->
+      <div class="home-row3-content-link">
+        <?php the_field("link_two_text"); ?>
+      </div><!-- home-row3-content-link -->
+    </a>
+  </div><!-- home-row3-content-link -->
 
-<div id="home-row3-content-box3"><a href="<?php the_field("link_three"); ?>"><img src="<?php bloginfo('template_url'); ?>/images/box3image.png" alt="" border="0"></a><div class="home-row3-content-link"><a href="<?php the_field("link_three"); ?>"><?php the_field("link_three_text"); ?></a></div></div>
+  <div id="home-row3-content-box3" class="home-row3-content-box">
+    <a href="<?php the_field("link_three"); ?>">
+      <div class="home-icon">
+        <img src="<?php bloginfo('template_url'); ?>/images/box3image.png" alt="" border="0">
+      </div><!-- home icon -->
+      <div class="home-row3-content-link">
+        <?php the_field("link_three_text"); ?>
+      </div><!-- home-row3-content-link -->
+    </a>
+  </div><!-- home-row3-content-link -->
+
 <?php endwhile; wp_reset_postdata(); // end of the loop. ?>
 </div>
 </div>
@@ -237,7 +260,7 @@ $args = array (
 );
 $wp_user_query = new WP_User_Query($args);
 $authors = $wp_user_query->get_results();
-if (!empty($authors)) {
+if (!empty($authors)) :
 foreach ($authors as $author) {
 $author_info = get_userdata($author->ID);
 $author_id = $author_info->ID;
@@ -248,17 +271,22 @@ $image = get_field( 'photo', 'user_'.$author_id );
 $size = 'portsmall';
 $thumb = $image['sizes'][ $size ];
 ?>
-<div class="agent-profile-box">
-<div class="agent-photo"><a href="<?php echo $link; ?>"><img src="<?php echo $thumb; ?>" /></a></div>
-<div class="agent-profile-box-content">
-<h2><a href="<?php echo $link; ?>"><?php echo $agentName; ?> <?php echo $agentName2; ?></a></h2>
-</div>
-</div>
-<?php }
-} 
+  <div class="agent-profile-box js-blocks">
+    <div class="agent-photo">
+      <a href="<?php echo $link; ?>">
+        <img src="<?php echo $thumb; ?>" />
+      </a>
+    </div><!-- agent-photo -->
+    <div class="agent-profile-box-content">
+      <h2><a href="<?php echo $link; ?>"><?php echo $agentName; ?> <?php echo $agentName2; ?></a></h2>
+    </div><!-- agent-profile-box-content -->
+  </div><!-- agent-profile-box -->
 
-?></div>
-<!-- -->
+<?php }
+endif;
+
+?></div><!-- -->
+
 <div id="agents-box"><div id="agents-box-padding">
 <h2>Need help selecting an agent?</h2>
 Fill out a simple form to get matched with an agent that meet your needs.

@@ -342,15 +342,15 @@ input {
 }
 #main2 {
 	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	position: relative;
 	@media screen and (min-width: $tabwidth) {
 
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 1120px;
+		// width: 1120px;
+		width: 90%;
 	}
 }
 #bottom-link {
@@ -372,7 +372,7 @@ input {
 	float: left;
 	background-image: url(images/charlotte-center-city.jpg);
 	background-repeat: no-repeat;
-	background-size: cover-x;
+	background-size: cover;
 }
 #main {
 	width: 100%;
@@ -741,7 +741,7 @@ blockquote {
 	// height: 325px;
 	float: left;
 	text-align: center;
-	padding: 0 0 80px 0;
+	padding: 0 0 120px 0;
 	background-color: #000000;
 }
 #footer a:link {
@@ -762,7 +762,7 @@ blockquote {
 	margin: 0 auto;
 	background-image: url(images/bg-footer.png);
 	background-repeat: no-repeat;
-	background-position: bottom 0 right 120px;
+	background-position: bottom right;
 	margin-top: 30px;
 	overflow: hidden;
 	@media screen and (min-width: $tabwidth) {
@@ -770,29 +770,73 @@ blockquote {
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 1130px;
+		// width: 1130px;
+		width: 90%;
 	}
 }
+
+
 #footer-newsletter {
-	width: 170px;
-	float: left;
-	padding-top: 20px;
-}
-#footer-content2 {
-	width: 170px;
-	float: right;
-	padding-top: 20px;
-}
-#footer-social {
 	width: 100%;
 	float: left;
+	padding-top: 20px;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 30%;
+	}
+}
+.newsletter-signup {
+	width: auto;
+	display: inline-block;
+	margin: 0 auto;
+	a {
+		width: auto;
+	    background-color: #3855A3;
+	    padding: 15px 20px;
+	    text-align: center;
+	    border-radius: 7px;
+	    margin-bottom: 20px;
+	    display: inline-block;
+	    font-size: 15px;
+	    text-decoration: none;
+	    color: #fff;
+	    @include transition(all 0.3s ease);
+	}
+
+	@media screen and (min-width: $tabwidth) {
+		// float: left;
+		margin: 0;
+	}
+}
+#footer-content2 {
+	width: 100%;
+	padding: 20px 5%;
+	@media screen and (min-width: $tabwidth) {
+		width: 30%;
+		float: right;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 170px;
+		padding: 20px 0 0 0;
+	}
+}
+#footer-social {
+	width: auto;
+	display: inline-block;
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+		float: left;
+	}
 }
 #footer-links {
 	width: 100%;
 	float: left;
 	color: #ffffff;
-	text-align: right;
+	
 	padding-top: 10px;
+	@media screen and (min-width: $tabwidth) {
+		text-align: right;
+	}
 	ul {
 		margin: 0;
 		padding: 0;
@@ -809,6 +853,7 @@ blockquote {
 	font-size: 14px;
 	font-weight: bold;
 	color: #666666;
+	margin: 40px 0 0 0;
 }
 #footer2 a:link {
 	color: #666666;
@@ -824,16 +869,27 @@ blockquote {
 }
 #footer-row1-box1 {
 	width: 100%;
-	height: 220px;
+	padding: 5%;
 	float: left;
 	text-align: left;
 	color: #ffffff;
 	@media screen and (min-width: $tabwidth) {
+		width: 40%;
 
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 525px;
+		width: 35%;
+		padding: 0;
+	}
+}
+.item-address {
+	width: 100%;
+	float: left;
+	margin: 0 0 20px 0;
+	text-align: center;
+	@media screen and (min-width: $tabwidth) {
+		text-align: left;
 	}
 }
 #footer-row1-box1 h2 {
@@ -841,7 +897,7 @@ blockquote {
 	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 5px;
-	margin-top: 20px;
+	
 }
 #page-heading {
 	margin-bottom: 15px;
@@ -858,22 +914,22 @@ blockquote {
 	float: left;
 	width: 100%;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 60%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 630px;
+		// width: 630px;
 	}
-}
-#page-text-left h2 {
-	width: 100%!important;
-	float: left!important;
-	margin-top: 20px!important;
-}
-#page-text-left p {
-	width: 100%!important;
-	float: left!important;
-	margin-top: 20px!important;
+	h2 {
+		width: 100%!important;
+		float: left!important;
+		margin-top: 20px!important;
+	}
+	p {
+		width: 100%!important;
+		float: left!important;
+		margin-top: 20px!important;
+	}
 }
 .text {
 	width: 100%!important;

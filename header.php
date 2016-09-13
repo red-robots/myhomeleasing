@@ -49,22 +49,6 @@ document.getElementById(livetab).style.backgroundColor="silver";
 
 </script>
 
-<?php 
-
-// If on homepage for at least 10 seconds
-
-if(is_front_page()) : ?>
-  <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded",function(){
-
-      var mes='Welcome to My Home Leasing. How can we help you?';
- 
-      setTimeout(function(){
-        if (typeof lhnWin == 'undefined') {WriteLHNMessage(mes,0);}
-      },10000);
-    });
-  </script>
-<?php endif; ?>
 
 <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
