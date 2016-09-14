@@ -78,7 +78,7 @@
 	<div id="Zsmenu" class="lhnInviteContainer">
 		<div class="chatwrap">
 			<div class="LHNInviteTitle">Live Help</div><!-- LHNInviteTitle -->
-			<div class="chat-window-person"><img src=""></div>
+			<div class="chat-window-person"><img src="<?php bloginfo('template_url'); ?>/images/operator.png"></div>
 			<div id="Zsleft" class="LHNInviteMessage">
 				<p>Welcome to My Home Leasing.</p>
 				<p>How can we help you today?</p>

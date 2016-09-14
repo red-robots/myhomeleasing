@@ -34,9 +34,9 @@
 	width: 49%;
 	float: right;
 }
-.infusion-field-input-container {
-	height: 25px!important;
-}
+// .infusion-field-input-container {
+// 	height: 25px!important;
+// }
 .communities-photo {
 	width: 100%!important;
 	height: 613px!important;
@@ -186,11 +186,11 @@
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 980px;
+		
 	}
-}
-#current-listings-header h2 {
-	margin-bottom: 0px;
+	h2 {
+		margin-bottom: 0px;
+	}
 }
 #community-realtors {
 	width: 250px;
@@ -283,38 +283,47 @@ height: auto; */
 }
 .community-gallery-photo {
 	width: 100%;
-	height: 205px;
+	// height: 205px;
 	float: left;
+	box-shadow: 4px 4px 3px #E4E4E4;
+	line-height: 0;
+
+	img {
+		width: 100%;
+
+	}
 	
 	@media screen and (min-width: $tabwidth) {
-
+		width: 30%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 310px;
+		// width: 310px;
 	}
 
 	&.first {
-		margin: 0 20px 20px 0;
+		// margin: 0 20px 20px 0;
+		margin: 0 3% 3% 0;
 	}
 	&.last {
-		margin: 0 0px 20px 0;
+		// margin: 0 0px 20px 0;
+		margin: 0 0% 3% 0;
 	}
 
 }
 
-.community-gallery-photo img {
-	width: 100%;
-	height: 205px;
-	box-shadow: 4px 4px 3px #E4E4E4;
-	@media screen and (min-width: $tabwidth) {
+// .community-gallery-photo img {
+// 	width: 100%;
+// 	height: 205px;
+// 	box-shadow: 4px 4px 3px #E4E4E4;
+// 	@media screen and (min-width: $tabwidth) {
 
-	}
+// 	}
 
-	@media screen and (min-width: $deskwidth) {
-		width: 310px;
-	}
-}
+// 	@media screen and (min-width: $deskwidth) {
+// 		width: 310px;
+// 	}
+// }
 // .community-gallery-photo:nth-child(4) {
 // 	margin-right: 0px!important;
 // }
@@ -332,18 +341,35 @@ height: auto; */
 	width: 50%;
 	float: left;
 }
-.infusion-field {
-	margin-bottom: 25px!important;
-	width: 50%;
-	float: left;
-}
+// .infusion-field {
+// 	margin-bottom: 25px!important;
+// 	width: 50%;
+// 	float: left;
+// }
 .infusion-option {
 	padding-right: 15px;
 	float: left;
+
+	input {
+		margin: 0 15px 0 0;
+	}
 }
 .infusion-submit {
 	width: 100%;
 	float: left;
+	margin: 20px 0;
+
+	input {
+		width: 100%;
+		background-color: rgba(0,153,207,1);
+		color: #fff;
+		border: 0;
+		padding: 10px 0;
+
+		&:hover {
+			background-color: rgba(0,153,207,7);
+		}
+	}
 }
 #page-right-column .agent-profile-box-content {
 	width: 100%;
@@ -364,32 +390,62 @@ height: auto; */
 	width: 100%;
 	float: left;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 60%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 675px;
+		// width: 675px;
+		width: 66%;
+	}
+	.responsive-tabs .responsive-tabs__list__item {
+		font-size: 16px;
+		
+		@media screen and (min-width: $tabwidth) {
+			margin: 0 5px 0 0 ;
+			font-size: 12px;
+			padding: 5px 5px 5px;
+		}
+
+		@media screen and (min-width: $deskwidth) {
+			padding: 10px 12px 10px;
+		}
 	}
 }
 #features-agents {
-	width: 265px;
+	width: 100%;
 	float: right;
 	margin-left: 25px;
 	margin-top: 30px;
+	@media screen and (min-width: $tabwidth) {
+		width: 30%;
+	}
+
+	@media screen and (min-width: $deskwidth) {
+		// width: 265px;
+		width: 26%;
+	}
+	h2 {
+		text-align: center;
+		@media screen and (min-width: $tabwidth) {
+			text-align: left;
+		}
+	}
 }
-#features-agents h2 {
-	text-align: center;
-}
+
 #find-box-wrapper {
 	width: 100%;
 	// height: 192px;
-	// position: absolute;
-	// left: 0px;
-	// bottom: 0;
 	float: left;
-	clear: both;
 	z-index: 12000;
 	color: #ffffff;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+	@media screen and (min-width: $deskwidth) {
+		// position: absolute;
+		// left: 0px;
+		// bottom: 0;
+	}
 }
 #find-box {
 	width: 100%;
@@ -592,6 +648,10 @@ section.tab-buttons {
 	background-image: url(images/bg-home-row2.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
+	padding: 5%;
+	@media screen and (min-width: $deskwidth) {
+		padding: 0;
+	}
 }
 #home-row2-row1 {
 	width: 100%;
@@ -1055,11 +1115,11 @@ section.tab-buttons {
 	width:100%;
 	float: left;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 60%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 600px;
+		// width: 600px;
 	}
 }
 #agent-search {
@@ -1099,7 +1159,7 @@ section.tab-buttons {
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 1020px;
+		// width: 1020px;
 	}
 }
 #agents-page-box {
@@ -1109,44 +1169,39 @@ section.tab-buttons {
 	background-color: #0198CF;
 	color: #ffffff;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 33%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 353px;
+		// width: 353px;
+	}
+	h3 {
+		color: #ffffff;
+		font-size: 23px;
+		line-height: 24px;
+	}
+	img {
+		float: right;
+		margin-left: 20px;
+	}
+	a {
+		width: 100%;
+		// height: 130px;
+		background-color: #0198CF;
+		padding: 30px;
+		display:block;
+		text-decoration: none;
+		color: #ffffff; 
+
+		@media screen and (min-width: $tabwidth) {
+
+		}
+
+		@media screen and (min-width: $deskwidth) {
+			// width: 293px;
+		}
 	}
 }
-
-#agents-page-box h3 {
-	color: #ffffff;
-	font-size: 23px;
-	line-height: 24px;
-}
-
-#agents-page-box img {
-	float: right;
-	margin-left: 20px;
-}
-
-#agents-page-box a {
-	width: 100%;
-	// height: 130px;
-	background-color: #0198CF;
-	padding: 30px;
-	display:block;
-	@media screen and (min-width: $tabwidth) {
-
-	}
-
-	@media screen and (min-width: $deskwidth) {
-		// width: 293px;
-	}
-}
-
-#agents-page-box a:link { color: #ffffff; text-decoration: none; }
-#agents-page-box a:visited { color: #ffffff; text-decoration: none; }
-#agents-page-box a:hover { color: #ffffff; text-decoration: none; background-color: #3653A5; }
-
 .page-content {
 	float: left;
 	width: 100%;
@@ -1158,22 +1213,23 @@ section.tab-buttons {
 }
 #communities-heading-photo {
 	width: 100%;
-	height: 400px;
+	// 
 	overflow: hidden;
 	position: relative;
-}
-#communities-heading-photo img {
-	width: 100%;
-	height: auto;
-	margin-top: -100px;
+	@media screen and (min-width: $deskwidth) {
+		height: 400px;
+	}
+	img {
+		width: 100%;
+		height: auto;
+		margin-top: -100px;
+	}
 }
 #communities-title-box {
 	width: 100%;
-	height: 250px;
+	// height: 250px;
 	padding: 15px;
-	position: absolute;
-	bottom: 25px;
-	right: 50px;
+	
 	background-image: url(images/bg-communities-box-header.png);
 	@media screen and (min-width: $tabwidth) {
 
@@ -1181,6 +1237,9 @@ section.tab-buttons {
 
 	@media screen and (min-width: $deskwidth) {
 		width: 350px;
+		position: absolute;
+	bottom: 25px;
+	right: 50px;
 	}
 }
 #communities-title-box #page-heading h1 {
@@ -1208,34 +1267,32 @@ section.tab-buttons {
 }
 #communities-heading-link {
 	width: auto;
-	position: absolute;
-	bottom: 25px;
-	left: 50px;
+	
 	font-size: 25px;
 	text-transform: uppercase;
-}
-#communities-heading-link a {
-	width: 100%;
-	display: block;
-	background-color: #3753A1;
-	padding: 14px 22px;
-	text-align: center;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
-	display: block;
-}
-#communities-heading-link a:link {
-	color: #ffffff;
-	text-decoration: none;
-}
-#communities-heading-link a:visited {
-	color: #ffffff;
-	text-decoration: none;
-}
-#communities-heading-link a:hover {
-	color: #ffffff;
-	text-decoration: none;
-	background-color: $color-mhl-blue;
+	@media screen and (min-width: $deskwidth) {
+		position: absolute;
+		bottom: 25px;
+		left: 50px;
+	}
+	a {
+		width: 100%;
+		display: block;
+		background-color: #3753A1;
+		padding: 14px 22px;
+		text-align: center;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		display: block;
+		color: #ffffff;
+		text-decoration: none;	
+
+		&:hover {
+			color: #ffffff;
+			text-decoration: none;
+			background-color: #239BCB;
+		}
+	}
 }
 section.community {
 	width: 100%;
@@ -1740,15 +1797,17 @@ hr {
 	width: 100%;
 	float: left;
 	position: relative;
-	margin-right: 20px;
-	margin-bottom: 15px;
+	
 	z-index: 50;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 28%;
+		margin: 2%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 184px;
+		// width: 184px;
+		width: 14%;
+		margin: 0 2.2% 20px 0;
 	}
 	a {
 		color: #ffffff;
@@ -1757,6 +1816,13 @@ hr {
 	}
 	img {
 		width: 100%;
+		
+		filter: gray; /* IE6-9 */
+  	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+
+		 
+	
 	}
 	.link a {
 		width: 100%;
@@ -1765,7 +1831,14 @@ hr {
 		top: 0;
 		left: 0;
 		z-index: 52;
+
+		
 	}
+
+	&:hover img {
+			filter: none;
+		  -webkit-filter: grayscale(0);
+		}
 }
 .agent-profile-box-content {
 	width: 100%;
@@ -1781,7 +1854,7 @@ hr {
 	h2 {
 		font-size: 15px;
 		color: #fff;
-		margin: 0 0 0px 0;
+		margin: 0 0 20px 0;
 	}
 
 }

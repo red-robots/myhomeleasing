@@ -133,7 +133,7 @@ $the_query = new WP_Query( $querySlides );
 <?php 
 // Query the Post type Slides
 $querySlides = array(
-  'post_type' => 'post',
+  'post_type' => 'community',
 'posts_per_page' => '-1'
 );
 // The Query
@@ -293,7 +293,7 @@ Fill out a simple form to get matched with an agent that meet your needs.
 <a href="<?php bloginfo('url'); ?>/need-help-selecting-an-agent"><img src="<?php bloginfo('template_url'); ?>/images/agents-go-arrow.png" alt="" border="0"></a></div>
 </div>
 <div id="view-all-agents">
-<div id="view-all-agents-box"><a href="<?php bloginfo('url'); ?>/my-townhome-agents">VIEW ALL AGENTS</a></div>
+<div id="view-all-agents-box"><a href="<?php bloginfo('url'); ?>/my-home-leasing-agents">VIEW ALL AGENTS</a></div>
 </div>
 </div>
 </div>

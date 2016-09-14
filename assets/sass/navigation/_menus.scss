@@ -4,25 +4,30 @@
 	// float: left;
 	// width: 100%;
 	// display: block;
+	text-align: center;
 	text-transform: uppercase;
 	clear: both;
-	@media screen and (min-width: $tabwidth) {
-
-	}
-
-	@media screen and (min-width: $deskwidth) {
+	width: 100%;
 	
-	}
-	width: auto;
 	margin-top: 10px;
 	padding-top: 12px;
-	float: right;
+	
+
+	@media screen and (min-width: $navbreakwidth) {
+		width: auto;
+		float: right;
+	}
+
+	@media screen and (min-width: $largewidth) {
+	
+	}
+	
 
 	ul {
-		// display: none;
-		// list-style: none;
-		// margin: 0;
-		// padding-left: 0;
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -90,6 +95,23 @@
 		position: relative;
 		text-align: center;
 		font-size: 14px;
+		width: 100%;
+
+		@media screen and (min-width: $navbreakwidth) {
+			font-size: 12px;
+			width: auto;
+		}
+
+		@media screen and (min-width: $midwidth) {
+			font-size: 13px;
+			width: auto;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 15px;
+		}
+		@media screen and (min-width: $largewidth) {
+			font-size: 16px;
+		}	
 
 		&:hover > a,
 		&.focus > a {
@@ -102,8 +124,15 @@
 			/*height: 18px;*/
 			margin-top: 10px;
 			line-height: 4px!important;
-			padding: 20px 5px;
+			padding: 20px 15px;
 			display: block;
+			@media screen and (min-width: $navbreakwidth) {
+				padding: 15px 5px;
+			}
+
+			@media screen and (min-width: $largewidth) {
+				padding: 20px 15px;
+			}	
 
 			&:hover {
 				background-color: #359DC7;
@@ -121,6 +150,14 @@
 		text-decoration: none;
 		margin-bottom: 15px;
 		@include transition(all .3s ease);
+
+		@media screen and (min-width: $navbreakwidth) {
+			padding: 18px 10px 10px 10px;
+		}
+
+		@media screen and (min-width: $largewidth) {
+			padding: 18px 18px 10px 18px;
+		}	
 	}
 
 	.current_page_item > a,
@@ -158,7 +195,7 @@
 }
 
 
-@media screen and (min-width: $tabwidth) {
+@media screen and (min-width: $navbreakwidth) {
 	.menu-toggle {
 		display: none;
 	}
@@ -169,21 +206,22 @@
 button.menu-toggle {
 	border: 0px;
 	text-shadow: none;
-	background-color: rgba(255,255,255,.1);
+	background-color: rgba($color-blue,1);
 	color: #fff;
 	box-shadow: none;
-	width: auto;
+	width: 100%;
 	display: inline-block;
 	margin: 10px auto;
 	border-radius: 0;
 	text-transform: uppercase;
+	padding: 10px 0;
 	font: {
 		
 		weight :300;
 		size: 20px;
 	}
 	
-	@media screen and (min-width: $tabwidth) {
+	@media screen and (min-width: $navbreakwidth) {
 		display: none;
 	}
 }
@@ -346,7 +384,7 @@ button.menu-toggle {
 
 	}
 
-	@media screen and (min-width: $deskwidth) {
+	@media screen and (min-width: $largewidth) {
 	
 	}
 	width: 100%;

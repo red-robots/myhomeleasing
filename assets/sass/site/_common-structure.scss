@@ -27,8 +27,11 @@ body {
 	position: relative;
 }
 #current-listings-frame {
-	width: 980px;
+	width: 100%;
 	margin: 0 auto;
+	@media screen and (min-width: $deskwidth) {
+		// width: 980px;
+	}
 }
 
 .class {
@@ -45,19 +48,19 @@ body {
 
 #page-right-column .infusion-field-input-container {
 	height: 21px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
+	// -moz-border-radius: 7px;
+	// border-radius: 7px;
 	width: 70%;
 }
 .infusion-field-input-container {
 	height: 30px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
+	// -moz-border-radius: 7px;
+	// border-radius: 7px;
 	width: 85%;
 }
 .infusion-field textarea {
-	-moz-border-radius: 7px;
-	border-radius: 7px;
+	// -moz-border-radius: 7px;
+	// border-radius: 7px;
 	width: 100%;
 }
 #advanced-search-link {
@@ -151,9 +154,15 @@ body {
 
 
 input {
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	// -moz-border-radius: 5px;
+	// border-radius: 5px;
 	color: #000000;
+}
+.infusion-field {
+	overflow: hidden;
+	width: 100%;
+	float:  left;
+	margin: 0 0 15px 0;
 }
 .infusion-field p {
 	margin-bottom: 0px;
@@ -335,10 +344,19 @@ input {
 	background-color: #000000;
 }
 #main-header {
-	width: 85%;
+	width: 100%;
+	
 	// height: 178px;
 	margin-left: auto;
 	margin-right: auto;
+	@media screen and (min-width: $navbreakwidth) {
+		padding: 5%;
+	}
+
+	@media screen and (min-width: $deskwidth) {
+		width: 85%;
+		padding: 0;
+	}
 }
 #main2 {
 	width: 100%;
@@ -384,7 +402,8 @@ input {
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 980px;
+		// width: 980px;
+		width: 90%;
 	}
 }
 
@@ -458,28 +477,39 @@ input {
 	float: left;
 }
 #logo {
-	width: 362px;
+	width: 280px;
 	// height: 91px;
-	float: left;
+	margin: 0 auto;
 	padding-top: 12px;
 	@media screen and (min-width: $tabwidth) {
-
+		float: left;
+		margin: 0;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		
+		width: 362px;
+
 	}
 
 	a {
 		display: block;
-		width: 362px;
+		width: 280px;
+		@media screen and (min-width: $deskwidth) {
+			width: 362px;
+		}
 	}
 }
 #header-content-wrapper {
 	width: auto;
 	// height: 60px;
-	float: right;
+	
 	padding-top: 10px;
+	@media screen and (min-width: $tabwidth) {
+		float: right;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 600px;
+	}
 }
 #header-content {
 	width: 100%;
@@ -488,27 +518,59 @@ input {
 	position: relative;
 }
 #header-content1 {
-	width: auto;
+	width: 100%;
 	// height: 30px;
 	float: left;
 	font-size: 13px;
 	color: #A4A3A4;
-	text-align: right;
-	padding-top: 10px;
-	padding-right: 25px;
+	text-align: center;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: auto;
+		padding-top: 10px;
+		padding-right: 25px;
+		text-align: right;
+	}
+
+	&:after {
+		clear: both;
+		width: 100%;
+		content: '';
+		@media screen and (min-width: $deskwidth) {
+			clear: none;
+		}
+	}
+}
+.header-cont-right {
+	width: 100%;
+	clear: both;
+	@media screen and (min-width: $deskwidth) {
+		width: auto;
+		clear: none;
+	}
 }
 #header-content2 {
-	width: auto;
+	width: 100%;
 	// height: 40px;
 	float: left;
 	font-size: 26px;
 	color: #FFFFFF;
-	text-align: right;
+	text-align: center;
+	@media screen and (min-width: $tabwidth) {
+		text-align: right;
+		width: auto;
+		float: right;
+	}
 }
 #social-icons {
 	width: 114px;
 	// height: 40px;
 	float: left;
+	display: none;
+
+	@media screen and (min-width: $tabwidth) {
+		display: block;
+	}
 }
 #social1 {
 	width: 40px;

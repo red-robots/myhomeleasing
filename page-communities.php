@@ -44,7 +44,7 @@ $the_query = new WP_Query( $args );
         <section class="communities">
           <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
-            <div class="community-box">
+            <div class="community-box  js-blocks">
             <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
             <?php 
             $image = get_field('featured_photo');
