@@ -86,7 +86,7 @@ get_header(); ?>
            <?php endif; ?>
 
            <?php if (strlen(get_post_meta($post->ID, "showing_request", true)) > 0) : ?>
-            <?php echo do_shortcode("[tabby title='Pricing']"); ?>
+            <?php echo do_shortcode("[tabby title='Request a Showing']"); ?>
             <div class="tab-content">
               <?php the_field("showing_request"); ?>
             </div><!--- / tab -->  
