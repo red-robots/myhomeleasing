@@ -30,7 +30,14 @@ get_header(); ?>
         </div><!-- communities-heading-photo -->
       </div><!-- news-events -->
 
-      <div id="page-text"><?php the_content(); ?></div>
+      <div id="page-text">
+      <?php 
+      $pageContet = get_field('page_content');
+      $video = get_field('video');
+      echo $pageContent;
+      echo $video;
+      //the_content(); ?>
+      </div>
       
       <div id="features-row">
         <div id="features"> 

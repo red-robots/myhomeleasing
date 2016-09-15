@@ -87,7 +87,7 @@ $the_query = new WP_Query( $querySlides );
         </a>
       </div><!-- col -->
       <div class="col">
-        <a href="#">
+        <a href="<?php bloginfo('url'); ?>/for-renters/">
           
           <div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
           <h3>For Renters</h3>
