@@ -73,7 +73,7 @@ $antispam = antispambot($email);
 		<?php if( $phone != '' ) { ?><div><?php echo $phone; ?> office</div><?php } ?> 
         <?php if( $phone2 != '' ) { ?><div><?php echo $phone2; ?> cell</div><?php } ?> 
 
-	    <div class="agent-email">
+	    <div class="single-agent-email">
 	    	<a href="mailto:<?php echo $antispam; ?>"><?php echo $antispam; ?></a>
 	    </div><!--agent-email-->
 
