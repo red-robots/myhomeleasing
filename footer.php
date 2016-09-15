@@ -75,6 +75,12 @@
 	</div><!-- chat-bar -->
 
 	
+	<?php 
+
+// If on homepage for at least 10 seconds
+
+if(is_front_page()) : ?>
+
 	<div id="Zsmenu" class="lhnInviteContainer">
 		<div class="chatwrap">
 			<div class="LHNInviteTitle">Live Help</div><!-- LHNInviteTitle -->
@@ -89,6 +95,8 @@
 			</div><!-- LHNInviteButtons -->
 		</div><!-- chatwrap -->
 	</div><!-- Zsmenu -->
+
+<?php endif; ?>
 	
 
 
