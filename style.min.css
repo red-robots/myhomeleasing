@@ -1531,6 +1531,10 @@ blockquote{width:223px;padding-left:20px;padding-right:20px;padding-bottom:40px;
 #footer a:hover{color:silver;text-decoration:none}
 #footer-wrapper{width:100%;margin:0 auto;background-image:url(images/bg-footer.png);background-repeat:no-repeat;background-position:bottom right;margin-top:30px;overflow:hidden}
 @media screen and (min-width:1200px){#footer-wrapper{width:90%}
+}.blue-button{width:auto;display:inline-block;margin:0 auto}
+.blue-button a{width:auto;background-color:#334ea5;padding:15px 20px;text-align:center;border-radius:7px;margin-bottom:20px;display:inline-block;font-size:15px;text-decoration:none;color:#fff;-webkit-transition:all .3s ease;transition:all .3s ease}
+.blue-button a:hover{background-color:rgba(51,78,165,0.6)}
+@media screen and (min-width:600px){.blue-button{margin:0}
 }#footer-newsletter{width:100%;float:left;padding-top:20px}
 @media screen and (min-width:600px){#footer-newsletter{width:30%}
 }.newsletter-signup{width:auto;display:inline-block;margin:0 auto}
