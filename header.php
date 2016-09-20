@@ -83,7 +83,7 @@ document.getElementById(livetab).style.backgroundColor="silver";
               <div id="social2"><a href="<?php the_field('youtube_link', 'option'); ?>" target="_blank"></a></div><!-- social1 -->
             </div><!-- social-icons -->
 
-            <div id="header-content2">704.377.4567</div><!-- header-content2 -->
+            <!-- <div id="header-content2">704.377.4567</div>header-content2 -->
              </div><!-- header cont right -->
           </div><!-- header-content -->
         </div><!-- header-content-wrapper -->

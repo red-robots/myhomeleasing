@@ -1264,7 +1264,7 @@ a,img{border:0}
 .main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
 .main-navigation li{float:left;position:relative;text-align:center;font-size:14px;width:100%}
 @media screen and (min-width:725px){.main-navigation li{font-size:12px;width:auto}
-}@media screen and (min-width:976px){.main-navigation li{font-size:13px;width:auto}
+}@media screen and (min-width:976px){.main-navigation li{font-size:16px;width:auto}
 }@media screen and (min-width:1200px){.main-navigation li{font-size:15px}
 }@media screen and (min-width:1400px){.main-navigation li{font-size:16px}
 }.main-navigation li:last-child a{width:auto;background-color:#3753a1;border-radius:6px;margin-top:10px;line-height:4px !important;padding:20px 15px;display:block}
@@ -1273,6 +1273,7 @@ a,img{border:0}
 }.main-navigation li:last-child a:hover{background-color:#359dc7;color:#fff !important}
 .main-navigation a{color:#fff;display:block;line-height:26px;padding:18px 13px 10px 13px;text-decoration:none;margin-bottom:15px;-webkit-transition:all .3s ease;transition:all .3s ease}
 @media screen and (min-width:725px){.main-navigation a{padding:18px 10px 10px 10px}
+}@media screen and (min-width:725px){.main-navigation a{padding:18px 10px 10px 10px}
 }@media screen and (min-width:1400px){.main-navigation a{padding:18px 18px 10px 18px}
 }.main-navigation .sub-menu{background-image:url(images/bg-nav.png);background-repeat:repeat;padding-bottom:10px;border-radius:0 0 12px 12px}
 .main-navigation .sub-menu li{width:100%;float:left}
@@ -1483,7 +1484,7 @@ input{color:#000}
 @media screen and (min-width:1200px){#logo a{width:362px}
 }#header-content-wrapper{width:auto;padding-top:10px}
 @media screen and (min-width:600px){#header-content-wrapper{float:right}
-}@media screen and (min-width:1200px){#header-content-wrapper{width:600px}
+}@media screen and (min-width:1200px){#header-content-wrapper{width:390px}
 }#header-content{width:100%;float:right;position:relative}
 #header-content1{width:100%;float:left;font-size:13px;color:#a4a3a4;text-align:center}
 @media screen and (min-width:600px){#header-content1{width:auto;padding-top:10px;padding-right:25px;text-align:right}
@@ -1493,8 +1494,9 @@ input{color:#000}
 @media screen and (min-width:1200px){.header-cont-right{width:auto;clear:none}
 }#header-content2{width:100%;float:left;font-size:26px;color:#fff;text-align:center}
 @media screen and (min-width:600px){#header-content2{text-align:right;width:auto;float:right}
-}#social-icons{width:114px;float:left;display:none}
+}#social-icons{width:114px;float:right;display:none}
 @media screen and (min-width:600px){#social-icons{display:block}
+}@media screen and (min-width:1200px){#social-icons{float:left}
 }#social1{width:40px;height:40px;float:left;margin-right:10px}
 #social1 a{width:40px;height:40px;background-image:url(images/social1.png);background-position:0 0;display:block}
 #social1 a:hover{width:40px;height:40px;background-image:url(images/social1.png);background-position:0 -40px;display:block}
@@ -1534,10 +1536,12 @@ blockquote{width:223px;padding-left:20px;padding-right:20px;padding-bottom:40px;
 #footer a:hover{color:silver;text-decoration:none}
 #footer-wrapper{width:100%;margin:0 auto;background-image:url(images/bg-footer.png);background-repeat:no-repeat;background-position:bottom right;margin-top:30px;overflow:hidden}
 @media screen and (min-width:1200px){#footer-wrapper{width:90%}
-}.blue-button{width:auto;display:inline-block;margin:0 auto}
-.blue-button a{width:auto;background-color:#334ea5;padding:15px 20px;text-align:center;border-radius:7px;margin-bottom:20px;display:inline-block;font-size:15px;text-decoration:none;color:#fff;-webkit-transition:all .3s ease;transition:all .3s ease}
+}.blue-button{width:100%;display:inline-block;margin:0 auto}
+@media screen and (min-width:600px){.blue-button{width:auto}
+}.blue-button a{width:100%;background-color:#334ea5;padding:15px 20px;text-align:center;border-radius:7px;margin-bottom:20px;display:inline-block;font-size:15px;text-decoration:none;color:#fff;-webkit-transition:all .3s ease;transition:all .3s ease}
 .blue-button a:hover{background-color:rgba(51,78,165,0.6)}
-@media screen and (min-width:600px){.blue-button{margin:0}
+@media screen and (min-width:600px){.blue-button a{width:auto}
+}@media screen and (min-width:600px){.blue-button{margin:0}
 }#footer-newsletter{width:100%;float:left;padding-top:20px}
 @media screen and (min-width:600px){#footer-newsletter{width:30%}
 }.newsletter-signup{width:auto;display:inline-block;margin:0 auto}

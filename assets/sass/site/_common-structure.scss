@@ -508,7 +508,7 @@ input {
 		float: right;
 	}
 	@media screen and (min-width: $deskwidth) {
-		width: 600px;
+		width: 390px;
 	}
 }
 #header-content {
@@ -565,11 +565,14 @@ input {
 #social-icons {
 	width: 114px;
 	// height: 40px;
-	float: left;
+	float: right;
 	display: none;
 
 	@media screen and (min-width: $tabwidth) {
 		display: block;
+	}
+	@media screen and (min-width: $deskwidth) {
+		float: left;
 	}
 }
 #social1 {
@@ -837,11 +840,14 @@ blockquote {
 	}
 }
 .blue-button {
-	width: auto;
+	width: 100%;
 	display: inline-block;
 	margin: 0 auto;
-	a {
+	@media screen and (min-width: $tabwidth) {
 		width: auto;
+	}
+	a {
+		width: 100%;
 	    background-color: $color-blue;
 	    padding: 15px 20px;
 	    text-align: center;
@@ -854,6 +860,10 @@ blockquote {
 	    @include transition(all 0.3s ease);
 	    &:hover {
 	    	background-color: rgba($color-blue, .6)
+	    }
+
+	    @media screen and (min-width: $tabwidth) {
+	    	width: auto;
 	    }
 	}
 
