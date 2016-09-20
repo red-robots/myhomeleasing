@@ -166,19 +166,38 @@ Street name: <br/>
 
 <div class="form-col">
 Features:<br />
-	<input type="checkbox" name="has_basement" value="1"> Basement<br/>
-	<input type="checkbox" name="has_fireplace" value="1"> Fireplace<br/>
-	<input type="checkbox" name="has_garage" value="1"> Garage<br/>
-	<input type="checkbox" name="has_golf" value="1"> Golf<br/>
-	<input type="checkbox" name="has_master_down" value="1"> Master Downstairs<br/>
-	<input type="checkbox" name="new_construction" value="1"> New Construction<br/>
-	<input typ="checkbox" name="has_pool" value="1" class="pool"> Pool<br/>
-	<input type="checkbox" name="is_waterfront" value="1"> Waterfront Property<br/>
-	<input type="checkbox" name="is_waterview" value="1"> Water view<br/>
+	<div class="form-rad-wrap">
+		<input type="checkbox" name="has_basement" value="1"><label class="form-rad">Basement</label>
+	</div><!-- form rad wrap -->
+	<div class="form-rad-wrap">
+		<input type="checkbox" name="has_fireplace" value="1"><label class="form-rad">Fireplace</label>
+	</div><!-- form rad wrap -->
+	<div class="form-rad-wrap">
+		<input type="checkbox" name="has_garage" value="1"><label class="form-rad">Garage</label>
+	</div><!-- form rad wrap -->
+	<div class="form-rad-wrap">
+		<input type="checkbox" name="has_golf" value="1"><label class="form-rad">Golf</label>
+	</div><!-- form rad wrap -->
+	<div class="form-rad-wrap">
+		<input type="checkbox" name="has_master_down" value="1"><label class="form-rad">Master Downstairs</label>
+	</div><!-- form rad wrap -->
+	<div class="form-rad-wrap">
+		<input type="checkbox" name="new_construction" value="1"><label class="form-rad">New Construction</label>
+	</div><!-- form rad wrap -->
+	<div class="form-rad-wrap">
+		<input typ="checkbox" name="has_pool" value="1" class="pool"><label class="form-rad">Pool</label>
+	</div><!-- form rad wrap -->
+	<div class="form-rad-wrap">
+		<input type="checkbox" name="is_waterfront" value="1"><label class="form-rad">Waterfront Property</label>
+	</div><!-- form rad wrap -->
+	<div class="form-rad-wrap">
+		<input type="checkbox" name="is_waterview" value="1"><label class="form-rad">Water view</label>
+	</div><!-- form rad wrap -->
 </div><!-- form col -->
 <!-- <div class="clear"></div> -->
 
-<input class="right qs-sub" type="submit" value="Search">
+<div class="submit-col"><input class="right qs-sub" type="submit" value="Search"></div>
+
 </form>
 
 

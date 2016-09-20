@@ -41,17 +41,15 @@ $the_query = new WP_Query( $querySlides );
               the_post_thumbnail();
             } 
             ?>
-              <!-- commphoto -->
+             
               <div class="communities-photo">
-
-              <?php
-              $image = get_field('featured_photo');
-              $size = 'large';
-              if( !empty($image) ): ?>
-                <?php echo wp_get_attachment_image( $image, $size ); ?>
-              <?php endif; ?>
-
-              </div>
+                <?php
+                $image = get_field('featured_photo');
+                $size = 'large';
+                if( !empty($image) ):
+                   echo wp_get_attachment_image( $image, $size ); 
+                endif; ?>
+              </div><!-- communities-photo -->
               <div class="communities-short-description-wrapper">
                 <div class="communities-short-description-content">
                   <div class="communities-short-description">
@@ -61,9 +59,9 @@ $the_query = new WP_Query( $querySlides );
                     ?></h3>
                     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                     <a href="<?php the_permalink(); ?>"><?php the_field("short_description"); ?></a>
-                  </div>
-                </div>
-              </div>
+                  </div><!-- communities-short-description -->
+                </div><!-- communities-short-description-content -->
+              </div><!-- communities-short-description-wrapper -->
             </li>
             <?php endwhile; ?>
          </ul><!-- slides -->
@@ -90,7 +88,7 @@ $the_query = new WP_Query( $querySlides );
         <a href="<?php bloginfo('url'); ?>/for-renters/">
           
           <div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
-          <h3>For Renters</h3>
+          <h3>Request Showing</h3>
         </a>
       </div><!-- col -->
        <div class="col">

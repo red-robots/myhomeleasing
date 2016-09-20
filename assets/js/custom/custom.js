@@ -17,14 +17,50 @@ jQuery(document).ready(function ($) {
 		slideshowSpeed: 5000,
 	}); // end register flexslider
 
-	$('.flexslider2').flexslider({
-		animation: "slide",
-		animationLoop: true,
-		itemWidth: 275,
-		itemMargin: 0,
-		minItems: 2,
-		maxItems: 2
-	});
+	// $('.flexslider2').flexslider({
+	// 	animation: "slide",
+	// 	animationLoop: true,
+	// 	// itemWidth: 275,
+	// 	itemMargin: 0,
+	// 	minItems: 1,
+	// 	maxItems: 2
+	// });
+
+	(function() {
+ 
+	  // store the slider in a local variable
+	  var $window = $(window),
+	      flexslider = { vars:{} };
+	 
+	  // tiny helper function to add breakpoints
+	  function getGridSize() {
+	    return (window.innerWidth < 600) ? 1 :
+	           (window.innerWidth < 900) ? 2 : 2;
+	  }
+	 
+	  $(function() {
+	    SyntaxHighlighter.all();
+	  });
+	 
+	  $window.load(function() {
+	    $('.flexslider2').flexslider({
+	      animation: "slide",
+	      animationLoop: true,
+	      itemWidth: 210,
+	      itemMargin: 5,
+	      minItems: getGridSize(), // use function to pull in initial value
+	      maxItems: getGridSize() // use function to pull in initial value
+	    });
+	  });
+	 
+	  // check grid size on resize event
+	  $window.resize(function() {
+	    var gridSize = getGridSize();
+	 
+	    flexslider.vars.minItems = gridSize;
+	    flexslider.vars.maxItems = gridSize;
+	  });
+	}());
 
 	$('.flexslider3').flexslider({
 		animation: "slide",

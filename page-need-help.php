@@ -34,7 +34,7 @@
 // WP_User_Query arguments
 $args = array (
     'role' => 'Agent',
-		'number' => 3,
+		'number' => 4,
      'orderby' => 'rand',
 );
 

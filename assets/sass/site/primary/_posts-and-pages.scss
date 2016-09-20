@@ -37,18 +37,32 @@
 // .infusion-field-input-container {
 // 	height: 25px!important;
 // }
-.communities-photo {
-	width: 100%!important;
-	height: 613px!important;
+.communities-photo,
+.flexslider ul.slides .communities-photo {
+	width: 100%;
+	// height: 613px!important;
+	line-height: 0;
 	float: left;
 	overflow: hidden;
 	position: relative;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+
+	@media screen and (min-width: $deskwidth) {
+	
+	}
+
+	img {
+		height: auto;
+		width: 100%;
+	}
 }
-.communities-photo img {
-	width: 100%!important;
-	min-height: 613px!important;
-	height: auto!important;
-}
+// .communities-photo img {
+// 	width: 100%!important;
+// 	min-height: 613px!important;
+// 	height: auto!important;
+// }
 .communities-short-description-wrapper {
 	width: 100%;
 	height: 100%;
@@ -72,12 +86,9 @@
 	}
 }
 .communities-short-description {
-	width: 272px;
-	// height: 168px;
-	position: absolute;
-	padding: 15px;
-	top: 144px;
-	right: 5px;
+	width: 100%;
+	float: left;
+	padding: 5% 0 ;
 	z-index: 12000;
 	background-image: url(images/bg-communities-slider.png);
 	background-repeat: repeat;
@@ -85,59 +96,76 @@
 	color: #000000;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-}
-.communities-short-description a:link {
-	color: #000000;
-	text-decoration: none;
-}
-.communities-short-description a:visited {
-	color: #000000;
-	text-decoration: none;
-}
-.communities-short-description a:hover {
-	color: #159ACD;
-	text-decoration: none;
-}
-.communities-short-description h3 {
-	font-size: 12px;
-	padding-bottom: 7px;
-	background-image: url(images/line1.png);
-	background-position: bottom center;
-	background-repeat: no-repeat;
-	margin-bottom: 10px;
-	color: #000000;
-	display: inline-block;
-}
-.communities-short-description h2 {
-	font-size: 43px;
-	margin-bottom: 20px;
-	line-height: 37px;
-}
-.communities-short-description h2 a:link {
-	color: #000000;
-	text-decoration: none;
-}
-.communities-short-description h2 a:visited {
-	color: #000000;
-	text-decoration: none;
-}
-.communities-short-description h2 a:hover {
-	color: #159ACD;
-	text-decoration: none;
+	text-align: center;
+	@media screen and (min-width: $tabwidth) {
+		width: 272px;
+		position: absolute;
+		padding: 15px;
+		top: 144px;
+		right: 5px;
+		font-size: 13px;
+		text-align: left;
+	}
+
+	@media screen and (min-width: $deskwidth) {
+		width: 272px;
+		padding: 15px;
+		top: 144px;
+		right: 5px;
+		font-size: 13px;
+	}
+	a {
+		color: #000000;
+		text-decoration: none;
+		&:hover {
+			color: #159ACD;
+		}
+	}
+	h2 {
+		font-size: 28px;
+		line-height: 37px;
+		margin-bottom: 20px;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 30px;
+		// line-height: 37px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 43px;
+		}
+	}
+	h3 {
+		font-size: 12px;
+		padding-bottom: 7px;
+		background-image: url(images/line1.png);
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		margin-bottom: 10px;
+		color: #000000;
+		display: inline-block;
+	}
 }
 .communities-slide-box {
-	width: 275px!important;
-	height: 225px!important;
+	width: 100%;
 	position: relative;
 	float: left;
+	@media screen and (min-width: $tabwidth) {
+		width: 275px!important;
+		height: 225px!important;	
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
 }
 .communities-photo2 {
-	width: 275px!important;
-	height: 225px!important;
+	width: 100%;
 	float: left;
 	overflow: hidden;
 	position: relative;
 	background-color: #359DC7;
+	@media screen and (min-width: $tabwidth) {
+		width: 275px!important;
+		height: 225px!important;	
+	}
 }
 .communities-photo2 img {
 	width: 100%!important;
@@ -378,8 +406,16 @@ height: auto; */
 	text-align: center;
 }
 #page-right-column .agent-profile-box {
-	width: 184px;
+	width: 100%;
 	// height: 275px;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+
+	@media screen and (min-width: $deskwidth) {
+		// width: 675px;
+		width: 45%;
+	}
 }
 #features-row {
 	width: 100%;
@@ -466,15 +502,24 @@ section.tab-buttons {
 	padding: 30px 0;
 	overflow: hidden;
 	h3 {
-			font-size: 30px;
+			font-size: 28px;
 			color: #fff;
+			@media screen and (min-width: $tabwidth) {
+				font-size: 20px;
+			}
+			@media screen and (min-width: $deskwidth) {
+				font-size: 30px;
+			}
 		}
 	.col {
-		width: 25%;
+		width: 100%;
 		float: left;
 		text-align: center;
 		overflow: hidden;
 		margin-bottom: 30px;
+		@media screen and (min-width: $tabwidth) {
+			width: 25%;
+		}
 
 	}
 	.icon {
@@ -484,11 +529,17 @@ section.tab-buttons {
 		text-align: center;
 	}
 	i {
-		font-size: 4vw;
+		font-size: 10vw;
 		margin: 0px auto;
 		text-align: center;
 		@include transition(all .2s ease);
 		transform: scale(1);
+		@media screen and (min-width: $tabwidth) {
+			font-size: 6vw;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 4vw;
+		}
 		
 	}
 	a {
@@ -505,10 +556,18 @@ section.tab-buttons {
 	}
 	.quick-search {
 		clear: both;
-		width: 70%;
+		width: 90%;
 		margin: 30px auto;
 		border-top: 1px solid rgba(255,255,255,.5);
 		padding: 20px 0;
+		overflow: hidden;
+		position: relative;
+		@media screen and (min-width: $tabwidth) {
+			width: 80%;
+		}
+		@media screen and (min-width: $deskwidth) {
+			width: 80%;
+		}
 	}
 	input.right {
 		float: right;
@@ -522,7 +581,69 @@ section.tab-buttons {
 	}
 
 }
+.form-col {
+	width: 100%;
+	float: left;
+	display: inline-block;
+	
 
+	input {
+		margin: 0 0 5px 0;
+		width: 100%;
+		@media screen and (min-width: $tabwidth) {
+			width: auto;
+		}
+	}
+	select {
+		width: 100%;
+		@media screen and (min-width: $tabwidth) {
+			width: auto;
+		}
+	}
+	@media screen and (min-width: $tabwidth) {
+		width: 40%;
+		margin-right: 3%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 18%;
+	}
+}
+.submit-col {
+	width: 100%;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		width: 100px;
+		position: absolute;
+		right: 0;
+		top: 90px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 10%;
+	}
+	input {
+		width: 98%;
+		@media screen and (min-width: $tabwidth) {
+			width: 100%;
+		}
+	}
+}
+.form-rad-wrap {
+	width: 100%;
+	float: left;
+
+	label.form-rad {
+		width: auto;
+		float: left;
+		margin: 0 0 0 5px;
+	}
+	input {
+		width: auto;
+		float: left;
+	}
+}
+input.pool {
+	width: 25px;
+}
 #find-box .responsive-tabs-wrapper {
 	margin-bottom: 0;
 }
@@ -620,10 +741,16 @@ section.tab-buttons {
 	float: right;
 }
 #property-type {
-	width: 170px;
+	width: 100%;
+	@media screen and (min-width: $tabwidth) {
+		width: 170px;
+	}
 }
 #suggest1 {
-	width: 150px;
+	width: 100%;
+	@media screen and (min-width: $tabwidth) {
+		width: 150px;
+	}
 }
 #home-slider2 {
 	width: 100%;
@@ -659,19 +786,19 @@ section.tab-buttons {
 	margin-left: auto;
 	margin-right: auto;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 90%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 1228px;
+		// width: 1228px;
 	}
 }
 #home-row2-row1-content {
 	width: 100%;
-	height: 393px;
+	// height: 393px;
 	float: right;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 50%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
@@ -705,11 +832,11 @@ section.tab-buttons {
 	padding: 34px 0 34px 0;
 	overflow: hidden;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 90%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width:1228px;
+		// width:1228px;
 	}
 }
 #home-row2-row2-box1 {
@@ -720,11 +847,11 @@ section.tab-buttons {
 	font-size: 14px;
 	color: #000000;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 45%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 635px;
+		// width: 635px;
 	}
 }
 #home-row2-row2-box1 h2 {
@@ -739,15 +866,16 @@ section.tab-buttons {
 }
 #home-row2-row2-box2 {
 	width: 100%;
-	min-height: 387px;
+	// min-height: 387px;
 	float: right;
 	background-color: #F8F8F8;
 	@media screen and (min-width: $tabwidth) {
-
+		width: 45%;
+		margin: 33px 0 0 0;
 	}
 
 	@media screen and (min-width: $deskwidth) {
-		width: 510px;
+		// width: 510px;
 	}
 }
 #home-row2-row2-box2-text1 {
@@ -1021,15 +1149,15 @@ section.tab-buttons {
 	top: 0px;
 	left: 0px;
 }
-#home-agents h2 {
-	width: 100%;
-	// height: 32px;
-	float: left;
-	background-color: $color-mhl-blue;
-	padding-top: 10px;
-	font-size: 15px!important;
-	text-align: center;
-}
+// #home-agents h2 {
+// 	width: 100%;
+// 	// height: 32px;
+// 	float: left;
+// 	background-color: $color-mhl-blue;
+// 	padding-top: 10px;
+// 	font-size: 15px!important;
+// 	text-align: center;
+// }
 .home-agents h2 a:link {
 	color: #ffffff;
 	text-decoration: none;
@@ -1050,6 +1178,17 @@ section.tab-buttons {
 }
 #home-agents .agent-profile-box-content {
 	// height: 42px;
+	h2 {
+		padding: 0;
+		margin: 0;
+		font-size: 15px;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 12px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 15px;
+		}
+	}
 }
 #agents-box {
 	width: 100%;
@@ -1110,6 +1249,7 @@ section.tab-buttons {
 	width: 100%;
 	float: left;
 	margin-bottom: 20px;
+	overflow: hidden;
 }
 #agents-page-text {
 	width:100%;
@@ -1123,8 +1263,13 @@ section.tab-buttons {
 	}
 }
 #agent-search {
+	width: 100%;
 	float: left;
 	font-size: 13px;
+	margin: 0 0 20px 0;
+	@media screen and (min-width: $tabwidth) {
+		width: auto;
+	}
 }
 #agent-search input {
 	background-color: #279DD7!important;
@@ -1140,8 +1285,11 @@ section.tab-buttons {
 }
 #agent-search #agent-search1 {
 	color: #ffffff!important;
-	width: 260px!important;
+	width: 200px!important;
 	// height: 22px!important;
+	@media screen and (min-width: $tabwidth) {
+		width: 260px!important;
+	}
 }
 #agent-search .btn {
 	background-image: url(images/button-search.png)!important;
@@ -1702,6 +1850,11 @@ hr {
 	position: relative;
 	float: left;
 	margin-bottom: 20px;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
 	
 }
 .about-office-image {
@@ -1783,9 +1936,6 @@ hr {
 	bottom: 0;
 	right: 0;
 }
-.about-office-contact-padding {
-	
-}
 .about-office-contact a {
 	font-size: 15px;
 	padding: 14px 15px 10px 15px;
@@ -1797,6 +1947,7 @@ hr {
 	width: 100%;
 	float: left;
 	position: relative;
+	margin: 0 0 20px 0;
 	
 	z-index: 50;
 	@media screen and (min-width: $tabwidth) {
@@ -1854,7 +2005,14 @@ hr {
 	h2 {
 		font-size: 15px;
 		color: #fff;
-		margin: 0 0 20px 0;
+		margin: 0 0 0px 0;
+		padding: 0;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 13px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 15px;
+		}
 	}
 
 }
@@ -1863,6 +2021,19 @@ hr {
 	position: absolute;
 	bottom: 5px;
 	left: 5px;
+	z-index: 55;
+	font-size: 10px;
+	a {
+		padding: 3px 0;
+		display: block;
+		&:hover {
+			background-color: rgba(255,255,255,.4);
+
+		}
+	}
+}
+.agent-email-page {
+	width: auto;
 	z-index: 55;
 	font-size: 10px;
 	a {
@@ -2095,19 +2266,7 @@ li.lh:hover {
     cursor: pointer;
 }
 
-.form-col {
-	width: auto;
-	float: left;
-	display: inline-block;
-	margin-right: 30px;
 
-	input {
-		margin: 0 0 5px 0;
-	}
-}
-input.pool {
-	width: 25px;
-}
 // Chat window
   .chatwrap {
     width: 270px;
