@@ -1425,7 +1425,7 @@ body{background-color:#fff;margin:0;font-family:'Fira Sans',sans-serif;font-size
 .idx-search-pusher{margin-bottom:45px}
 #idx{width:100%;float:left}
 #idxmap_canvas{height:380px !important;margin-top:18px !important}
-.idxprop{width:90%;margin:10px auto;font-size:14px !important}
+.idxprop{width:100%;margin:10px auto;font-size:14px !important}
 @media screen and (min-width:600px){.idxprop{width:30%;float:left;margin-right:3% !important;margin-bottom:15px !important}
 }.idxprop a{background-color:#0099cf;color:#fff;font-weight:normal !important;padding:5px !important;-moz-border-radius:5px;-webkit-border-radius:5px;margin-bottom:10px;margin-top:10px;display:inline-block}
 .idxprop a:link{color:#fff;text-decoration:none}
@@ -1649,8 +1649,9 @@ ol.pings h3{font-size:.9em}
 .communities-slide-title a:link{color:#fff;text-decoration:none}
 .communities-slide-title a:visited{color:#fff;text-decoration:none}
 .communities-slide-title a:hover{color:silver;text-decoration:none}
-#communities-listings{width:100%;float:left;padding-top:35px}
-#current-listings-header{width:100%;margin-left:auto;margin-right:auto}
+#communities-listings{width:90%;margin:0 auto;padding-top:35px}
+@media screen and (min-width:600px){#communities-listings{width:100%;float:left}
+}#current-listings-header{width:100%;margin-left:auto;margin-right:auto}
 #current-listings-header h2{margin-bottom:0}
 #community-realtors{width:250px;float:right}
 .communities-realtor{width:120px;float:right}

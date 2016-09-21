@@ -201,9 +201,13 @@
 	text-decoration: none;
 }
 #communities-listings {
-	width: 100%;
-	float: left;
+	width: 90%;
+	margin: 0 auto;
 	padding-top: 35px;
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+		float: left;
+	}
 }
 #current-listings-header {
 	width: 100%;
