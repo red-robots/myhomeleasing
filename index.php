@@ -45,7 +45,7 @@ $the_query = new WP_Query( $querySlides );
               <div class="communities-photo">
                 <?php
                 $image = get_field('featured_photo');
-                $size = 'large';
+                $size = 'hero';
                 if( !empty($image) ):
                    echo wp_get_attachment_image( $image, $size ); 
                 endif; ?>
@@ -195,7 +195,7 @@ We’d like to be your realtor for this home and the next.
     <a href="http://www.maisonproperties.com/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/maison-properties-logo.png" alt="" border="0"></a>
   </div><!-- logo -->
   <div class="af-logo">
-    <a href="http://myhomeleasing.com/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/mth-logo-2016.png" alt="" border="0"></a>
+    <a href="http://mytownhome.com/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/mth-logo-2016.png" alt="" border="0"></a>
   </div><!-- logo -->
 
 </div>
