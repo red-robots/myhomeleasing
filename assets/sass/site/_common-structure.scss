@@ -1,20 +1,20 @@
 
 div {
 	/* These are technically the same, but use both */
-	overflow-wrap: auto;
-	word-wrap: auto;
+	// overflow-wrap: auto;
+	// word-wrap: auto;
 
-	-ms-word-break: auto;
+	// -ms-word-break: auto;
 	/* This is the dangerous one in WebKit, as it breaks things wherever */
-	word-break: auto;
+	// word-break: auto;
 	/* Instead use this non-standard one: */
-	word-break: auto;
+	// word-break: auto;
 
 	/* Adds a hyphen where the word breaks, if supported (No Blink) */
-	-ms-hyphens: auto;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
-	hyphens: auto;
+	// -ms-hyphens: auto;
+	// -moz-hyphens: auto;
+	// -webkit-hyphens: auto;
+	// hyphens: auto;
 }
 .clear {clear: both;}
 body {
