@@ -1421,7 +1421,7 @@ body{background-color:#fff;margin:0;font-family:'Fira Sans',sans-serif;font-size
 .infusion-field textarea{width:100%}
 #advanced-search-link{float:right;width:100%;text-align:right;margin-top:15px}
 #page-right-column #advanced-search-link{float:right;width:100%;text-align:left;margin-top:15px}
-.container{clear:both}
+.container{clear:both;width:90% !important}
 .idx-search-pusher{margin-bottom:45px}
 #idx{width:100%;float:left}
 #idxmap_canvas{height:380px !important;margin-top:18px !important}
@@ -1468,8 +1468,7 @@ input{color:#000}
 #main{width:100%;margin-left:auto;margin-right:auto;position:relative}
 @media screen and (min-width:1200px){#main{width:90%}
 }.bw-search #main{width:100%}
-@media screen and (min-width:1200px){.bw-search #main{width:1120px}
-}.dfres-address-detail{line-height:22px;padding-bottom:9px}
+.dfres-address-detail{line-height:22px;padding-bottom:9px}
 #map-top-right{width:100%;height:102px;float:left;padding-top:5px;padding-bottom:5px;padding-left:50px}
 @media screen and (min-width:1200px){#map-top-right{width:830px}
 }.bw-search #map-top-left{width:223px;height:102px;float:left;padding-top:5px;padding-bottom:5px;border-right:1px solid #131313;padding-right:15px}

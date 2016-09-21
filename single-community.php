@@ -159,7 +159,7 @@ get_header(); ?>
     </div><!-- current-listings-frame -->
   <?php endif; ?>
 
-<div id="bottom-link"><a href="<?php bloginfo('url'); ?>/apartment-communities/">view all communities</a></div><!-- -->
+<div class="blue-button"><a href="<?php bloginfo('url'); ?>/apartment-communities/">view all communities</a></div><!-- -->
 </div><!-- main2 -->
 <?php endwhile; endif; ?>   
 
