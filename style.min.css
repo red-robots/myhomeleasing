@@ -1415,8 +1415,9 @@ html[xmlns] .slides{display:block}
 div{overflow-wrap:auto;word-wrap:auto;-ms-word-break:auto;word-break:auto;word-break:auto;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}
 .clear{clear:both}
 body{background-color:#fff;margin:0;font-family:'Fira Sans',sans-serif;font-size:16px;color:#000;font-weight:300;position:relative}
-#current-listings-frame{width:100%;margin:0 auto}
-#page-right-column .infusion-field-input-container{height:21px;width:70%}
+#current-listings-frame{width:100%;margin:10px auto}
+@media screen and (min-width:1200px){#current-listings-frame{margin:0 auto 40px auto}
+}#page-right-column .infusion-field-input-container{height:21px;width:70%}
 .infusion-field-input-container{height:30px;width:85%}
 .infusion-field textarea{width:100%}
 #advanced-search-link{float:right;width:100%;text-align:right;margin-top:15px}
