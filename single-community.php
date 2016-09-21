@@ -15,7 +15,7 @@ get_header(); ?>
         <div id="communities-heading-photo">
         <?php
           $image = get_field('featured_photo');
-          $size = 'full';
+          $size = 'single-community';
 
         if( !empty($image) ): 
           echo wp_get_attachment_image( $image, $size );
@@ -135,7 +135,7 @@ get_header(); ?>
               ?>
                   <div class="community-gallery-photo <?php echo $photoClass; ?>">
                       <a href="<?php echo $image['url']; ?>" class="group1">
-                        <img src="<?php echo $image['sizes']['single-community']; ?>" alt="<?php echo $image['alt']; ?>" />
+                        <img src="<?php echo $image['sizes']['communities-gallery']; ?>" alt="<?php echo $image['alt']; ?>" />
                       </a>
                      <!--  <p><?php echo $image['caption']; ?></p> -->
                   </div><!-- community-gallery-photo -->
