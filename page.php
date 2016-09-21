@@ -8,7 +8,20 @@ get_header();
 	<div id="main">
 		<div class="page-content">
 			<div id="page-heading"><h1><?php the_title()?></h1></div>
-			<div id="page-text"><?php the_content(); ?></div>
+			<div id="page-text">
+				<?php 
+
+				if(is_page('maintenance')) { ?>
+				<div class="blue-button">
+					<a target="_blank" href="https://mytownhome.appfolio.com/connect/login">ONLINE MAINTENANCE REQUEST</a>
+				</div>
+
+				<?php }
+
+				the_content(); 
+
+				?>
+			</div>
 
 			<?php if( get_field('action_button_link')) : ?>
 				<div class="blue-button">

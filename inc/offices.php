@@ -26,16 +26,16 @@
       <div class="sidebar-directions">
         <a href="<?php the_field('google_map', 'option'); ?>" target="_blank">Get Directions</a>
       </div><!-- sidebar-directions -->
-      <div class="sidebar-email">
+     <!-- <div class="sidebar-email">
         email: <a href="mailto:<?php echo antispambot( 'elizabethmanager@mthrealestate.com' ); ?>"><?php echo antispambot( 'elizabethmanager' ); ?></a><br><a href="mailto:<?php echo antispambot( 'elizabethmanager@mthrealestate.com' ); ?>"><?php echo antispambot( '@mthrealestate.com' ); ?></a>
-      </div><!-- sidebar-email -->
+      </div> sidebar-email -->
       <div class="offices-phone">
       phone: <a href="tel:980-219-6013">980-219-6013</a>
       </div><!-- offices-phone -->
     </div><!-- about-office-text -->
-    <div class="about-office-contact">
+    <!--<div class="about-office-contact">
     <a href="<?php bloginfo('url'); ?>/our-offices-elizabeth">View Agents</a>
-    </div><!-- about-office-contact -->
+    </div> about-office-contact -->
   </div><!-- about-office-content -->
 </div><!-- about-office -->
 
@@ -68,18 +68,18 @@
     <div class="sidebar-directions">
       <a href="<?php the_field('google_map2', 'option'); ?>" target="_blank">Get Directions</a>
     </div><!-- sidebar-directions -->
-    <div class="sidebar-email">
+   <!-- <div class="sidebar-email">
       email: <a href="mailto:<?php echo antispambot( 'southblvdmanager@mthrealestate.com' ); ?>"><?php echo antispambot( 'southblvdmanager' ); ?></a>
       <br>
       <a href="mailto:<?php echo antispambot( 'southblvdmanager@mthrealestate.com' ); ?>"><?php echo antispambot( '@mthrealestate.com' ); ?></a>
-    </div><!-- sidebar-email -->
+    </div> sidebar-email -->
     <div class="offices-phone">
       phone: <a href="tel:980-219-6001">980-219-6001</a>
     </div><!-- offices-phone -->
   </div><!-- about-office-text -->
-  <div class="about-office-contact">
+ <!-- <div class="about-office-contact">
     <a href="<?php bloginfo('url'); ?>/south-end-office">View Agents</a>
-  </div><!-- about-office-contact -->
+  </div> about-office-contact -->
 </div><!-- about-office-content -->
 </div><!-- about-office -->
 
@@ -112,14 +112,14 @@
       <div class="sidebar-directions">
       <a href="<?php the_field('google_map3', 'option'); ?>" target="_blank">Get Directions</a>
       </div><!-- sidebar-directions -->
-      <div class="sidebar-email">
+     <!--  <div class="sidebar-email">
         email: <a href="mailto:<?php echo antispambot( 'uptownmanager@mthrealestate.com' ); ?>"><?php echo antispambot( 'uptownmanager' ); ?></a><br><a href="mailto:<?php echo antispambot( 'uptownmanager@mthrealestate.com' ); ?>"><?php echo antispambot( '@mthrealestate.com' ); ?></a>
-      </div><!-- sidebar-email -->
+      </div>sidebar-email -->
       <div class="offices-phone">
         phone: <a href="tel:704-749-3561">704-749-3561</a>
       </div><!-- offices-phone -->
     </div><!-- about-office-text -->
-    <div class="about-office-contact">
+    <!--<div class="about-office-contact">
       <a href="<?php bloginfo('url'); ?>/uptown-office">View Agents</a>
     </div><!-- about-office-contact -->
   </div><!-- about-office-content -->
