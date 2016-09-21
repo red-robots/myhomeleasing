@@ -15,8 +15,8 @@ get_header(); ?>
         <div id="communities-heading-photo">
         <?php
           $image = get_field('featured_photo');
-          // $size = 'single-community';
-           $size = 'full';
+          $size = 'single-community';
+           // $size = 'full';
 
         if( !empty($image) ): 
           echo wp_get_attachment_image( $image, $size );

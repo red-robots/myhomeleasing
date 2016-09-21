@@ -7,10 +7,7 @@
 <div class="form-col">
 
 Property Type:<br/><select name="proptype">
-<option value="res">Single-family Homes</option>
-<option value="cnd">Condos/Townhomes</option>
-<option value="mul">Multifamily</option>
-<option value="lnd">Land</option>
+<option value="rnt">Rentals</option>
 </select>
 	<br/>
 
@@ -185,7 +182,7 @@ Features:<br />
 		<input type="checkbox" name="new_construction" value="1"><label class="form-rad">New Construction</label>
 	</div><!-- form rad wrap -->
 	<div class="form-rad-wrap">
-		<input typ="checkbox" name="has_pool" value="1" class="pool"><label class="form-rad">Pool</label>
+		<input type="checkbox" name="has_pool" value="1" class="pool"><label class="form-rad">Pool</label>
 	</div><!-- form rad wrap -->
 	<div class="form-rad-wrap">
 		<input type="checkbox" name="is_waterfront" value="1"><label class="form-rad">Waterfront Property</label>
