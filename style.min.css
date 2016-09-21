@@ -1753,7 +1753,7 @@ input.pool{width:25px}
 #home-slider2 .flex-next{background-image:url(images/arrow-black.png);background-repeat:no-repeat}
 #home-slider2 .flex-direction-nav .flex-next{right:-15px}
 #home-slider2 .flex-direction-nav a{margin:-130px 0 0;height:50px}
-#home-row2{width:100%;float:left;background-color:#ededed;background-image:url(images/bg-home-row2.jpg);background-position:top center;background-repeat:no-repeat;padding:5%}
+#home-row2{width:100%;float:left;background-color:#ededed;background-image:url(images/bg-home-row2-new.png);background-position:top center;background-repeat:no-repeat;padding:5%}
 @media screen and (min-width:1200px){#home-row2{padding:0}
 }#home-row2-row1{width:100%;margin-left:auto;margin-right:auto}
 @media screen and (min-width:600px){#home-row2-row1{width:90%}
