@@ -170,6 +170,7 @@ add_theme_support( 'post-thumbnails' );
 // add_image_size( 'communities-main', 267, 218, true );
 //add_image_size( 'communities-single', 490, 293, true );
 add_image_size( 'communities-gallery', 310, 205, true );
+add_image_size( 'single-community', 1000, 267, true );
 // add_image_size( 'agent', 186, 217, true );
 // keep
  add_image_size( 'agent_feed', 184, 237, true );
