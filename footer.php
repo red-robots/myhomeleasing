@@ -80,7 +80,7 @@
 
 // If on homepage for at least 10 seconds
 
-if(is_page()) : ?>
+if(is_page('property-management-services')) : ?>
 
 	<div id="Zsmenu" class="lhnInviteContainer">
 		<div class="chatwrap">
@@ -105,7 +105,7 @@ if(is_page()) : ?>
 
 // If on homepage for at least 10 seconds
 
-if(is_front_page('property-management-services')) : ?>
+if(is_page('property-management-services')) : ?>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded",function(){
 
