@@ -68,7 +68,7 @@ get_header();
 
 				<?php if( $self_service_link != '' ) { ?>
 					<div class="newsletter-signup">
-						<a href="<?php echo $self_service_link; ?>">Full Service</a>
+						<a href="<?php echo $self_service_link; ?>">Self Service</a>
 					</div>
 				<?php } ?>
 
