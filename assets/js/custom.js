@@ -38,9 +38,9 @@ jQuery(document).ready(function ($) {
 	           (window.innerWidth < 900) ? 2 : 2;
 	  }
 	 
-	  $(function() {
-	    SyntaxHighlighter.all();
-	  });
+	  // $(function() {
+	  //   SyntaxHighlighter.all();
+	  // });
 	 
 	  $window.load(function() {
 	    $('.flexslider2').flexslider({
