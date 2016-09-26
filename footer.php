@@ -65,7 +65,8 @@
 					    var lhnInviteEnabled = 1;
 					    var lhnWindowN = 0;
 					    var lhnDepartmentN = 35805;
-					    var lhnCustomInvitation = '1';
+					    // var lhnCustomInvitation = '1';
+					    var lhnInviteN = "41887";
 					    // var lhnChatPositionYVal = 150;
 					</script>
 					<a href="http://www.livehelpnow.net/products/live-chat-system" target="_blank" style="font-size:10px;" id="lhnHelp">live chat service provider</a>
