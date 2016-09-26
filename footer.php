@@ -66,6 +66,8 @@
 					    var lhnWindowN = 0;
 					    var lhnDepartmentN = 35805;
 					    var lhnCustomInvitation = '1';
+					  
+
 					    // var lhnInviteN = "41887";
 					    // var lhnChatPositionYVal = 150;
 					</script>
@@ -115,7 +117,7 @@ if(is_page('property-management-services')) : ?>
       setTimeout(function(){
         if (typeof lhnWin == 'undefined') {
         	$('#Zsmenu').css("top","-9999");
-        	WriteLHNMessage(mes,0);
+        	WriteLHNMessage(mes,1);
         }
       },10000);
     });
