@@ -1267,7 +1267,7 @@ a,img{border:0}
 }@media screen and (min-width:976px){.main-navigation li{font-size:16px;width:auto}
 }@media screen and (min-width:1200px){.main-navigation li{font-size:15px}
 }@media screen and (min-width:1400px){.main-navigation li{font-size:16px}
-}.main-navigation li:last-child a{width:auto;background-color:#3753a1;border-radius:6px;margin-top:10px;line-height:4px !important;padding:20px 15px;display:block}
+}.main-navigation li:last-child a{width:auto;background-color:#3753a1;border-radius:6px;margin-top:10px;line-height:4px !important;padding:20px 15px;display:inline-block}
 @media screen and (min-width:725px){.main-navigation li:last-child a{padding:15px 5px}
 }@media screen and (min-width:1400px){.main-navigation li:last-child a{padding:20px 15px}
 }.main-navigation li:last-child a:hover{background-color:#359dc7;color:#fff !important}
@@ -1627,11 +1627,13 @@ ol.pings h3{font-size:.9em}
 #mortgage-calc-right{width:49%;float:right}
 .communities-photo,.flexslider ul.slides .communities-photo{width:100%;line-height:0;float:left;overflow:hidden;position:relative}
 .communities-photo img,.flexslider ul.slides .communities-photo img{height:auto;width:100%}
-.communities-short-description-wrapper{width:100%;height:100%;position:absolute;left:0;bottom:0;z-index:99999}
-.communities-short-description-content{width:100%;height:100%;margin-left:auto;margin-right:auto;position:relative}
+.communities-short-description-wrapper{width:100%;z-index:99999}
+@media screen and (min-width:600px){.communities-short-description-wrapper{height:100%;position:absolute;left:0;bottom:0}
+}.communities-short-description-content{width:100%;height:100%;margin-left:auto;margin-right:auto;position:relative}
 @media screen and (min-width:1200px){.communities-short-description-content{width:1100px}
 }.communities-short-description{width:100%;float:left;padding:5% 0;z-index:12000;background-image:url(images/bg-communities-slider.png);background-repeat:repeat;font-size:13px;color:#000;border-radius:10px;text-align:center}
-@media screen and (min-width:600px){.communities-short-description{width:272px;position:absolute;padding:15px;top:144px;right:5px;font-size:13px;text-align:left}
+@media screen and (min-width:600px){.communities-short-description{width:272px;position:absolute;padding:15px;top:30px;right:5px;font-size:13px;text-align:left}
+}@media screen and (min-width:1200px){.communities-short-description{top:144px}
 }@media screen and (min-width:1200px){.communities-short-description{width:272px;padding:15px;top:144px;right:5px;font-size:13px}
 }.communities-short-description a{color:#000;text-decoration:none}
 .communities-short-description a:hover{color:#159acd}
