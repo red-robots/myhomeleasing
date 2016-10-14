@@ -31,10 +31,10 @@
 </div>
 
 <div class="about-link1">
-<h2><a href="<?php bloginfo('url'); ?>/my-townhome-agents">Our Agents</a></h2>
-<a href="<?php bloginfo('url'); ?>/my-townhome-agents"><img src="<?php bloginfo('template_url'); ?>/images/our-agents.jpg" alt="" border="0"></a>
+<h2><a href="<?php bloginfo('url'); ?>/my-home-leasing-agents">Our Agents</a></h2>
+<a href="<?php bloginfo('url'); ?>/my-home-leasing-agents"><img src="<?php bloginfo('template_url'); ?>/images/our-agents.jpg" alt="" border="0"></a>
 
-<p><a href="<?php bloginfo('url'); ?>/my-townhome-agents">Find an expert to help you navigate the process of buying or selling a home.</a>
+<p><a href="<?php bloginfo('url'); ?>/my-home-leasing-agents">Find an expert to help you navigate the process of buying or selling a home.</a>
 </div>
   
 <div class="about-link2">

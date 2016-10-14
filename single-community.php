@@ -15,7 +15,7 @@ get_header(); ?>
         <div id="communities-heading-photo">
         <?php
           $image = get_field('featured_photo');
-          $size = 'single-community';
+          $size = 'large';
            // $size = 'full';
 
         if( !empty($image) ): 

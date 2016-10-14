@@ -416,7 +416,7 @@ height: auto; */
 	text-align: center;
 }
 #page-right-column .agent-profile-box {
-	width: 100%;
+	width: 45%;
 	// height: 275px;
 	@media screen and (min-width: $tabwidth) {
 		
@@ -1080,10 +1080,10 @@ input.pool {
 		width: 60%;
 	}
 	.agent-profile-box {
-		width: 100%;
+		width: 46%;
+    	margin: 0 2% 15px 2%;
 		float: left;
 		position: relative;
-		margin: 0 0 30px 0;
 		
 		z-index: 50;
 		@media screen and (min-width: $tabwidth) {
@@ -1093,8 +1093,8 @@ input.pool {
 
 		@media screen and (min-width: $midwidth) {
 			// width: 184px;
-			width: 20%;
-			margin: 0 2.2% 20px 0;
+			width: 18%;
+			margin: 0 2% 20px 0;
 		}
 		a {
 			color: #ffffff;
@@ -1295,7 +1295,7 @@ input.pool {
 }
 #agent-search #agent-search1 {
 	color: #ffffff!important;
-	width: 200px!important;
+	// width: 160px!important;
 	// height: 22px!important;
 	@media screen and (min-width: $tabwidth) {
 		width: 260px!important;
@@ -1374,13 +1374,13 @@ input.pool {
 	position: relative;
 	overflow: hidden;
 	position: relative;
-	@media screen and (min-width: $deskwidth) {
-		// height: 400px;
+	@media screen and (min-width: $midwidth) {
+		img {margin-top: -100px;}
 	}
 	img {
 		width: 100%;
 		height: auto;
-		// margin-top: -100px;
+		
 	}
 }
 #communities-title-box {
@@ -1393,10 +1393,10 @@ input.pool {
 
 	}
 
-	@media screen and (min-width: $deskwidth) {
+	@media screen and (min-width: $midwidth) {
 		width: 350px;
 		position: absolute;
-	bottom: 25px;
+	bottom: 25%;
 	right: 50px;
 	}
 }
@@ -1425,13 +1425,14 @@ input.pool {
 }
 #communities-heading-link {
 	width: auto;
-	
+	margin: 10px auto;
 	font-size: 25px;
 	text-transform: uppercase;
-	@media screen and (min-width: $deskwidth) {
+	@media screen and (min-width: $midwidth) {
 		position: absolute;
-		bottom: 25px;
+		bottom: 25%;
 		left: 50px;
+		margin: 0;
 	}
 	a {
 		width: 100%;
@@ -1439,11 +1440,14 @@ input.pool {
 		background-color: #3753A1;
 		padding: 14px 22px;
 		text-align: center;
-		-moz-border-radius: 7px;
-		border-radius: 7px;
+		
 		display: block;
 		color: #ffffff;
 		text-decoration: none;	
+		@media screen and (min-width: $midwidth) {
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+		}
 
 		&:hover {
 			color: #ffffff;
@@ -1954,10 +1958,10 @@ hr {
 	background-color: #3551A3;
 }
 .agent-profile-box {
-	width: 100%;
 	float: left;
 	position: relative;
-	margin: 0 0 20px 0;
+	width: 46%;
+	margin: 0 2% 30px 2%;
 	
 	z-index: 50;
 	@media screen and (min-width: $tabwidth) {
@@ -1967,8 +1971,8 @@ hr {
 
 	@media screen and (min-width: $deskwidth) {
 		// width: 184px;
-		width: 14%;
-		margin: 0 2.2% 20px 0;
+		width: 18%;
+		margin: 0 2% 20px 0;
 	}
 	a {
 		color: #ffffff;
