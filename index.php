@@ -289,7 +289,7 @@ endif;
 
       <div id="view-all-agents">
         <div id="view-all-agents-box">
-          <a href="<?php bloginfo('url'); ?>/our-agents">VIEW ALL AGENTS</a>
+          <a href="<?php bloginfo('url'); ?>/my-home-leasing-agents">VIEW ALL AGENTS</a>
         </div><!-- view-all-agents-box -->
       </div><!-- view-all-agents -->
       
@@ -319,7 +319,7 @@ endif;
 
       <div id="view-all-agents">
         <div id="view-all-agents-box">
-          <a href="<?php bloginfo('url'); ?>/our-agents">VIEW ALL AGENTS</a>
+          <a href="<?php bloginfo('url'); ?>/my-home-leasing-agents">VIEW ALL AGENTS</a>
         </div><!-- view-all-agents-box -->
       </div><!-- view-all-agents -->
 
