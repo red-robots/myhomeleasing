@@ -85,9 +85,9 @@
                 <div class="agent-profile-box-content">
                     <h2><?php echo $agentName . ' ' . $agentName2; ?></h2>
                     <div><?php echo $myField; ?></div>
-                    <div class="agent-email-page">
+                    <!--<div class="agent-email-page">
                         <a href="mailto:<?php echo $antispam; ?>"><?php echo $antispam; ?></a>
-                    </div><!--agent-email-->
+                    </div>agent-email-->
                 </div><!-- agent-profile-box-content -->
                 
             <div class="link"><a href="<?php echo $link; ?>"></a></div>

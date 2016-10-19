@@ -1413,6 +1413,7 @@ html[xmlns] .slides{display:block}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
 *{-webkit-hyphens:none}
+*{-ms-word-break:keep-all;word-break:keep-all;word-break:keep-all;overflow-wrap:normal;-ms-hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;hyphens:none}
 .clear{clear:both}
 body{background-color:#fff;margin:0;font-family:'Fira Sans',sans-serif;font-size:16px;color:#000;font-weight:300;position:relative}
 #current-listings-frame{width:100%;margin:10px auto}
@@ -1820,8 +1821,11 @@ input.pool{width:25px}
 #home-agents .agent-profile-box-content h2{padding:0;margin:0;font-size:15px}
 @media screen and (min-width:600px){#home-agents .agent-profile-box-content h2{font-size:12px}
 }@media screen and (min-width:1200px){#home-agents .agent-profile-box-content h2{font-size:15px}
-}#agents-box{width:100%;float:right;background-color:#239bcb;color:#fff;font-size:14px;font-weight:normal;padding:20px}
-@media screen and (min-width:600px){#agents-box{width:33%}
+}@media screen and (min-width:600px){.mobile-agent{display:none}
+}.desktop-agent{display:none}
+@media screen and (min-width:600px){.desktop-agent{display:block}
+}#agents-box{width:90%;clear:both;background-color:#239bcb;color:#fff;font-size:14px;font-weight:normal;padding:20px 20px 50px 20px;margin:10px auto}
+@media screen and (min-width:600px){#agents-box{width:33%;float:right;clear:none;margin:0;padding:20px}
 }#agents-box img{float:right;padding-right:5px;padding-top:10px}
 #agents-box h2{font-size:24px;color:#fff;text-align:left;margin-bottom:25px}
 #view-all-agents{width:100%;float:left;padding-top:50px}
