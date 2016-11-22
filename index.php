@@ -125,7 +125,7 @@ $the_query = new WP_Query( $querySlides );
 <div id="home-row2">
 <div id="home-row2-row1">
 <div id="home-row2-row1-content">
-<div id="home-row2-row1-content-heading"><a href="<?php bloginfo('url'); ?>/townhome-communities">SHOP BY COMMUNITY</a></div>
+<div id="home-row2-row1-content-heading"><a href="<?php bloginfo('url'); ?>/apartment-communities/">SHOP BY COMMUNITY</a></div>
 <!-- -->
 <div id="home-slider2">
 <?php 
