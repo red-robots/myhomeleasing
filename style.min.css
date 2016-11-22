@@ -1463,7 +1463,7 @@ input{color:#000}
 #main-header{width:100%;margin-left:auto;margin-right:auto}
 @media screen and (min-width:725px){#main-header{padding:5%}
 }@media screen and (min-width:1200px){#main-header{width:85%;padding:0}
-}#main2{width:100%;margin:0 auto;position:relative}
+}#main2{width:100%;margin:0 auto;position:relative;clear:both}
 @media screen and (min-width:1200px){#main2{width:90%}
 }#bottom-link{width:100%;margin-left:auto;margin-right:auto;position:relative;padding:30px 0 20px 0}
 @media screen and (min-width:1200px){#bottom-link{width:980px}
@@ -1653,7 +1653,7 @@ ol.pings h3{font-size:.9em}
 .communities-slide-title a:link{color:#fff;text-decoration:none}
 .communities-slide-title a:visited{color:#fff;text-decoration:none}
 .communities-slide-title a:hover{color:silver;text-decoration:none}
-#communities-listings{width:90%;margin:0 auto;padding-top:35px}
+#communities-listings{width:90%;margin:0 auto;clear:both;padding-top:35px}
 @media screen and (min-width:1200px){#communities-listings{width:100%;float:left}
 }#current-listings-header{width:100%;margin-left:auto;margin-right:auto}
 #current-listings-header h2{margin-bottom:0}
