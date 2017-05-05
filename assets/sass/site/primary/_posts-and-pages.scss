@@ -774,17 +774,17 @@ input.pool {
 	width: 100%;
 	float: left;
 }
-#home-slider2 .flex-next {
-	background-image: url(images/arrow-black.png);
-	background-repeat: no-repeat;
-}
-#home-slider2 .flex-direction-nav .flex-next {
-	right: -15px;
-}
-#home-slider2 .flex-direction-nav a {
-	margin: -130px 0 0;
-	height: 50px;
-}
+// #home-slider2 .flex-next {
+// 	background-image: url(images/arrow-black.png);
+// 	background-repeat: no-repeat;
+// }
+// #home-slider2 .flex-direction-nav .flex-next {
+// 	right: -15px;
+// }
+// #home-slider2 .flex-direction-nav a {
+// 	margin: -130px 0 0;
+// 	height: 50px;
+// }
 #home-row2 {
 	width: 100%;
 	// min-height: 850px;
@@ -816,7 +816,7 @@ input.pool {
 	// height: 393px;
 	float: right;
 	@media screen and (min-width: $tabwidth) {
-		width: 50%;
+		// width: 50%;
 	}
 
 	@media screen and (min-width: $deskwidth) {
@@ -828,12 +828,20 @@ input.pool {
 	text-align: center;
 	font-size: 26px;
 	color: #000000;
-	padding-top: 40px;
+	
 	padding-bottom: 25px;
 	margin-bottom: 20px;
 	background-image: url(images/line1.png);
 	background-position: bottom center;
 	background-repeat: no-repeat;
+
+	@media screen and (min-width: $tabwidth) {
+
+	}
+
+	@media screen and (min-width: $deskwidth) {
+		padding-top: 40px;
+	}
 }
 #home-row2-row1-content-heading a {
 	color: #000000;
@@ -1347,12 +1355,14 @@ input.pool {
 }
 #agents-page-box {
 	width: 100%;
-	height: 190px;
+	// height: 190px;
 	float: right;
 	background-color: #0198CF;
 	color: #ffffff;
+	margin: 20px auto;
 	@media screen and (min-width: $tabwidth) {
 		width: 33%;
+		margin: 0 0 20px 0;
 	}
 
 	@media screen and (min-width: $deskwidth) {
@@ -1377,11 +1387,11 @@ input.pool {
 		color: #ffffff; 
 
 		@media screen and (min-width: $tabwidth) {
-
+			padding: 10px;
 		}
 
 		@media screen and (min-width: $deskwidth) {
-			// width: 293px;
+			padding: 30px;
 		}
 	}
 }

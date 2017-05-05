@@ -283,45 +283,13 @@ endif;
 
 ?></div><!-- -->
 
-  <div class="mobile-agent">
-
-      <div id="view-all-agents">
-        <div id="view-all-agents-box">
-          <a href="<?php bloginfo('url'); ?>/my-home-leasing-agents">VIEW ALL AGENTS</a>
-        </div><!-- view-all-agents-box -->
-      </div><!-- view-all-agents -->
-      
-      <div id="agents-box">
-        <div id="agents-box-padding">
-          <h2>Need help selecting an agent?</h2>
-          Fill out a simple form to get matched with an agent that meet your needs.
-          <a href="<?php bloginfo('url'); ?>/need-help-selecting-an-agent">
-            <img src="<?php bloginfo('template_url'); ?>/images/agents-go-arrow.png" alt="" border="0">
-          </a>
-        </div><!-- agents-box-padding -->
-      </div><!-- agents-box -->
-
-    </div><!-- mobile agent -->
-
-     <div class="desktop-agent">
-
-      <div id="agents-box">
-        <div id="agents-box-padding">
-          <h2>Need help selecting an agent?</h2>
-          Fill out a simple form to get matched with an agent that meet your needs.
-          <a href="<?php bloginfo('url'); ?>/need-help-selecting-an-agent">
-            <img src="<?php bloginfo('template_url'); ?>/images/agents-go-arrow.png" alt="" border="0">
-          </a>
-        </div><!-- agents-box-padding -->
-      </div><!-- agents-box -->
-
-      <div id="view-all-agents">
-        <div id="view-all-agents-box">
-          <a href="<?php bloginfo('url'); ?>/my-home-leasing-agents">VIEW ALL AGENTS</a>
-        </div><!-- view-all-agents-box -->
-      </div><!-- view-all-agents -->
-
-    </div><!-- desk agent -->
+  <div id="agents-page-box">
+      <a href="<?php bloginfo('url'); ?>/need-help-selecting-an-agent/">
+          <h3>Need help selecting<br> an agent?</h3>
+          <img src="<?php bloginfo('template_url'); ?>/images/arrow-white.png" alt="" border="0">Answer a few quick questions to get matched with an agent that best meets your needs.
+      </a>
+  </div><!-- agents-page-box -->
+  
 </div>
 </div>
 
