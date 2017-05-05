@@ -49,7 +49,7 @@ jQuery(document).ready(function ($) {
 	      animation: "slide",
 	      animationLoop: true,
 	      itemWidth: 210,
-	      itemMargin: 5,
+	      itemMargin: 15,
 	      controlNav: false,
 	      customDirectionNav: ".caro-nav",
 	      minItems: getGridSize(), // use function to pull in initial value
