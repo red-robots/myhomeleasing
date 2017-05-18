@@ -248,7 +248,59 @@ We’d like to be your realtor for this home and the next.
 <h2 class="section-title">OUR AGENTS</h2>
 <!-- -->
 <div id="home-agents">
+
 <?php
+        $response = wp_remote_get( 'http://myhomenorthcarolina.com/wp-json/wp/v2/users?per_page=100' );
+        if( is_array($response) ) :
+            $code = wp_remote_retrieve_response_code( $response );
+            if(!empty($code) && intval(substr($code,0,1))===2): 
+                $body = json_decode(wp_remote_retrieve_body( $response),true);
+                $max = count($body);
+                $rand_array = array();
+                if($max>3):
+                    while(count($rand_array)<4):
+                        $int = rand(0,$max);
+                        if(!in_array($int,$rand_array)):
+                          if($body[$int]['acf']&&$body[$int]['acf']['photo']):
+                            $rand_array[]=$int;
+                          endif;
+                        endif;
+                    endwhile;
+                else: 
+                    $rand_array = $body;
+                endif;
+                foreach ($rand_array as $i):
+                    $author = $body[$i];
+                    // get all the user's data
+                    $link = $author['link'];
+                    $agentName = $author['name'];
+                    $antispam = null;
+                    $thumb = null;
+                    if(isset($author['acf'])):
+                        if(isset($author['acf']['photo'])):
+                            $thumb = $author['acf']['photo']['sizes'][ 'agent_feed' ];
+                        endif;
+                    endif;
+                    if($thumb): ?>
+
+                        <div class="agent-profile-box  js-blocks">
+                          <div class="agent-photo">
+                            <a href="<?php echo add_query_arg( 'from', 'myhomeleasing', $link); ?>" target="_blank"><img src="<?php echo $thumb; ?>" /></a>
+                          </div><!-- agent-photo -->
+                          <div class="agent-profile-box-content">
+                            <h2>
+                              <a href="<?php echo add_query_arg( 'from', 'myhomeleasing', $link); ?>" target="_blank">
+                                <?php echo $agentName; ?>
+                              </a>
+                            </h2>
+                          </div><!-- agent-profile-box-content -->
+                        </div><!-- agent-profile-box -->
+      
+                    <?php endif; 
+                endforeach;?>
+            <?php endif;
+        endif;
+        /*
 $args = array (
 'role' => 'Agent',
 'number' => 4,
@@ -281,7 +333,7 @@ $thumb = $image['sizes'][ $size ];
 <?php }
 endif;
 
-?></div><!-- -->
+*/?></div><!-- -->
 
   <div id="agents-page-box">
       <a href="<?php bloginfo('url'); ?>/need-help-selecting-an-agent/">
