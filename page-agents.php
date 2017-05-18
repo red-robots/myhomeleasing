@@ -42,7 +42,49 @@
             </div><!-- page-text -->
         
     <div id="agent-boxes">
-        <?php
+         <?php
+        $response = wp_remote_get( 'http://myhomenorthcarolina.com/wp-json/wp/v2/users?per_page=100' );
+        if( is_array($response) ) {
+            $code = wp_remote_retrieve_response_code( $response );
+            if(!empty($code) && intval(substr($code,0,1))===2){ 
+                $body = json_decode(wp_remote_retrieve_body( $response),true);
+                //print_r($body);
+                // loop trough each author
+                foreach ($body as $author) {
+                    // get all the user's data
+                        $link = $author['link'];
+                        $agentName = $author['name'];
+                        $email = null;
+                        $antispam = null;
+                        $thumb = null;
+                        if(isset($author['acf'])):
+                            // email 
+                            $email = $author['acf']['email'];
+                            $antispam = antispambot($email);
+                            if(isset($author['acf']['photo'])):
+                                $thumb = $author['acf']['photo']['sizes'][ 'agent_feed' ];
+                            endif;
+                        endif;
+                        if($thumb):
+                    ?>
+
+                    <div class="agent-profile-box js-blocks">
+                        <?php if($thumb):?>
+                            <img src="<?php echo $thumb; ?>" />
+                        <?php endif;?>
+                        <div class="agent-profile-box-content">
+                            <h2>
+                                <?php echo $agentName; ?>
+                            </h2>
+                        </div><!-- agent-profile-box-content -->
+                        <div class="link"><a href="<?php echo add_query_arg( 'from', 'myhomeleasing', $link);  ?>"  target="_blank"></a></div>
+                    </div><!--  agent-profile-box -->
+                <?php endif;
+                }
+            }
+        }
+        
+        /*
          
         // WP_User_Query arguments
         $args = array (
@@ -96,7 +138,7 @@
         <?php 
             }
           
-        } 
+        } */
         ?>
     </div><!-- agent-boxes  -->
 
