@@ -250,7 +250,7 @@ We’d like to be your realtor for this home and the next.
 <div id="home-agents">
 
 <?php
-        $response = wp_remote_get( 'http://myhomenorthcarolina.com/wp-json/wp/v2/users?per_page=100' );
+        $response = wp_remote_get( 'https://myhomenorthcarolina.com/wp-json/wp/v2/users?per_page=100' );
         if( is_array($response) ) :
             $code = wp_remote_retrieve_response_code( $response );
             if(!empty($code) && intval(substr($code,0,1))===2): 
