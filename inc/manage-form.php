@@ -1,5 +1,5 @@
 
-<form name="dfform" action="https://myhomeleasing.localhomesearch.net/idx/" target="_new">
+<form name="dfform" action="http://myhomeleasing.localhomesearch.net/idx/" target="_new">
 <input type="hidden" name="op" value="query">
 <input type="hidden" name="stype" value="area">
 <input type="hidden" name="_srf" value="1">
