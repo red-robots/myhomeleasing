@@ -1020,14 +1020,16 @@ input.pool {
 	}
 }
 .home-icon {
-	width: 125px;
-	height: 125px;
+	width: 70px;
+	height: 80px;
 	margin: 10px auto;
 	img {
 		transform: scale(1);
 		@include transition(all .3s ease);
 	}
-
+	i {
+		font-size: 75px;
+	}
 	@media screen and (min-width: $tabwidth) {
 		// float: left;
 		// width: 30%;

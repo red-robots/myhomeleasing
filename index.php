@@ -210,7 +210,7 @@ We’d like to be your realtor for this home and the next.
   <div id="home-row3-content-box1" class="home-row3-content-box">
     <a href="<?php the_field("link_one"); ?>">
       <div class="home-icon">
-        <img src="<?php bloginfo('template_url'); ?>/images/box1image.png" alt="" border="0">
+        <i class="fa fa-users"></i>
       </div><!-- home icon -->
       <div class="home-row3-content-link">
         <?php the_field("link_one_text"); ?>
@@ -221,7 +221,7 @@ We’d like to be your realtor for this home and the next.
   <div id="home-row3-content-box2" class="home-row3-content-box">
     <a href="<?php the_field("link_two"); ?>">
       <div class="home-icon">
-        <img src="<?php bloginfo('template_url'); ?>/images/box2image.png" alt="" border="0">
+        <i class="fa fa-home"></i>
       </div><!-- home icon -->
       <div class="home-row3-content-link">
         <?php the_field("link_two_text"); ?>
@@ -232,7 +232,7 @@ We’d like to be your realtor for this home and the next.
   <div id="home-row3-content-box3" class="home-row3-content-box">
     <a href="<?php the_field("link_three"); ?>">
       <div class="home-icon">
-        <img src="<?php bloginfo('template_url'); ?>/images/box3image.png" alt="" border="0">
+        <i class="fa fa-check-square-o"></i>
       </div><!-- home icon -->
       <div class="home-row3-content-link">
         <?php the_field("link_three_text"); ?>
@@ -242,7 +242,7 @@ We’d like to be your realtor for this home and the next.
   <div id="home-row3-content-box4" class="home-row3-content-box">
     <a href="<?php the_field("link_four"); ?>">
       <div class="home-icon">
-        <img src="<?php bloginfo('template_url'); ?>/images/box3image.png" alt="" border="0">
+        <i class="fa fa-phone"></i>
       </div><!-- home icon -->
       <div class="home-row3-content-link">
         <?php the_field("link_four_text"); ?>
