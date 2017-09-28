@@ -204,7 +204,7 @@ We’d like to be your realtor for this home and the next.
 
 <div id="home-row3-content">
 
-<div id="home-row3-content-heading">Why hire a property manager?</div>
+<div id="home-row3-content-heading">Do you have an investment property for rent?<br>Let the experts at My Home Leasing help.</div>
 <?php $recent = new WP_Query("page_id=22"); while($recent->have_posts()) : $recent->the_post();?>
 
   <div id="home-row3-content-box1" class="home-row3-content-box">
@@ -236,6 +236,16 @@ We’d like to be your realtor for this home and the next.
       </div><!-- home icon -->
       <div class="home-row3-content-link">
         <?php the_field("link_three_text"); ?>
+      </div><!-- home-row3-content-link -->
+    </a>
+  </div><!-- home-row3-content-link -->
+  <div id="home-row3-content-box4" class="home-row3-content-box">
+    <a href="<?php the_field("link_four"); ?>">
+      <div class="home-icon">
+        <img src="<?php bloginfo('template_url'); ?>/images/box3image.png" alt="" border="0">
+      </div><!-- home icon -->
+      <div class="home-row3-content-link">
+        <?php the_field("link_four_text"); ?>
       </div><!-- home-row3-content-link -->
     </a>
   </div><!-- home-row3-content-link -->
