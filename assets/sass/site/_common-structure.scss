@@ -212,7 +212,7 @@ input {
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
-	background-color:#334EA5;
+	background-color: $color-blue;
 }
 #chat-tab {
 	width: 151px;
@@ -1015,6 +1015,21 @@ blockquote {
 	margin-bottom: 15px;
 	float: left;
 	width: 100%;
+	a.analytics {
+		text-align: center;
+		display: block;
+		text-decoration: none;
+		color: $color-mhl-blue;
+		font-size: 18px;
+		@media screen and (min-width: $tabwidth) {
+			float: right;
+			padding: 0 40px 0 0;
+			font-size: 20px;
+		}
+		&:hover {
+			color: $color-mhl-purple;
+		}
+	}
 }
 #page-text {
 	margin-bottom: 15px;
@@ -1322,7 +1337,7 @@ ol.pings h3 {
 	@include flexbox-direction(row);
 	text-align: center;
 	padding: 20px;
-	background-color: #3753A1;
+	background-color: $color-mhl-purple;
 	margin: 20px 0 0 0;
 	color: white;
 	border-radius: 6px;
