@@ -10,7 +10,7 @@ get_header();
 		<div class="page-content">
 			<div id="page-heading">
 				<h1><?php the_title()?></h1>
-				<a class="analytics cat:community action:call" href="tel:+17049275477">704-927-5477</a>
+				<a class="analytics cat:community action:call" href="tel:+17049275477">Call Now: 704-927-5477</a>
         		<div class="clear"></div>
 			</div>
 			<div id="page-text">
