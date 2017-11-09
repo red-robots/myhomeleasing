@@ -37,4 +37,4 @@ get_header();
 		</div><!-- / page content -->
 <?php endwhile; endif; ?>
 <?php //get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_footer("property-management"); ?>
