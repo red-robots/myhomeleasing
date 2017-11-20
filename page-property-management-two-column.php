@@ -2,7 +2,7 @@
 /**
 * Template Name: Property Management Two Column
 */
- get_header(); ?>
+ get_header("property-management"); ?>
 
 
 

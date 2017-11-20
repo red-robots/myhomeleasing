@@ -108,39 +108,39 @@ if(is_page('property-management-services')) : ?>
 <?php endif; ?>
 
 <div id="chat-bar">
-
-<div id="chat-bar-background">
-
-<div id="chat-bar-background-wrapper">
-
-<div id="chat-tab">
-
-
-<!-- This code must be installed within the body tags -->
-<script type="text/javascript">
-    var lhnAccountN = "3217-1";
-    var lhnButtonN = 7695;
-    var lhnChatPosition = 'default';
-    var lhnInviteEnabled = 1;
-    var lhnWindowN = 2417;
-    var lhnInviteN = 21336;
-    var lhnDepartmentN = 40447;
-</script>
-<a href="http://www.livehelpnow.net/help-desk-software" target="_blank" style="font-size:10px;" id="lhnHelp">help desk software</a>
-<script src="//www.livehelpnow.net/lhn/widgets/chatbutton/lhnchatbutton-current.min.js" type="text/javascript" id="lhnscript"></script>
-    
-
-</div>
-
-</div>
-
-</div>
-
-</div>
+	<div id="chat-bar-background">
+		<div id="chat-bar-background-wrapper">
+			<div id="recaptcha1">
+			</div><!--#recaptcha1-->
+			<div id="recaptcha-text">
+				Please check the checkbox to prove you are not a robot, then click the live chat now link.
+			</div><!--.recaptcha-text-->
+			<div id="chat-tab-fake">
+				Live Chat Now
+			</div><!--#chat-tab-fake-->
+			<div id="chat-tab">
+				<!-- This code must be installed within the body tags -->
+				<script type="text/javascript">
+					var lhnAccountN = "3217-1";
+					var lhnButtonN = 7695;
+					var lhnChatPosition = 'default';
+					var lhnInviteEnabled = 1;
+					var lhnWindowN = 2417;
+					var lhnInviteN = 21336;
+					var lhnDepartmentN = 40447;
+				</script>
+				<a href="http://www.livehelpnow.net/help-desk-software" target="_blank" style="font-size:10px;" id="lhnHelp">help desk software</a>
+				<script src="//www.livehelpnow.net/lhn/widgets/chatbutton/lhnchatbutton-current.min.js" type="text/javascript" id="lhnscript"></script>
+			</div><!-- chat-tab -->
+		</div><!-- chat-bar-background-wrapper -->
+	</div><!-- chat-bar-background -->
+</div><!-- chat-bar -->
 
 </div><!-- main-wrapper-all -->
 
 <?php wp_footer(); ?>
+
+<script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
