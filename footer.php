@@ -39,7 +39,7 @@
 						<ul>
 							<li><a href="<?php bloginfo('url'); ?>/about">ABOUT</a></li>
 							<li><a href="<?php bloginfo('url'); ?>/my-home-leasing-agents">OUR AGENTS</a></li>
-							<li><a href="<?php bloginfo('url'); ?>/careers">CAREERS</a></li>
+							<li><a href="https://myhomenorthcarolina.com/careers/">CAREERS</a></li>
 							<li><a href="<?php bloginfo('url'); ?>/resources">RESOURCES</a></li>
 							<li><a href="<?php bloginfo('url'); ?>/contact">CONTACT US</a></li>
 						</ul>
