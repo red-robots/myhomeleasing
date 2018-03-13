@@ -76,7 +76,7 @@ $the_query = new WP_Query( $querySlides );
 
     <section class="tab-buttons">
       <div class="col">
-        <a href="http://myhomeleasing.localhomesearch.net/idx/?op=query&stype=area&_srf=1&subv2=&proptype=rnt&my=1&street=&city=&zip=&price_min=&price_max=&beds=&baths=&sqft=&acreage=">
+        <a href="https://myhomeleasing.localhomesearch.net/idx/?op=query&stype=area&_srf=1&subv2=&proptype=rnt&my=1&street=&city=&zip=&price_min=&price_max=&beds=&baths=&sqft=&acreage=">
           
           <div class="icon"><i class="fa fa-key" aria-hidden="true"></i></div>
           <h3>Hot Properties</h3>
@@ -90,7 +90,7 @@ $the_query = new WP_Query( $querySlides );
         </a>
       </div><!-- col -->
        <div class="col">
-        <a href="http://myhomeleasing.localhomesearch.net/idx/?op=query&stype=area&_srf=1&subv2=&proptype=rnt&street=&city=&zip=&price_min=&price_max=&beds=&baths=&sqft=&acreage=&furn=on">
+        <a href="https://myhomeleasing.localhomesearch.net/idx/?op=query&stype=area&_srf=1&subv2=&proptype=rnt&street=&city=&zip=&price_min=&price_max=&beds=&baths=&sqft=&acreage=&furn=on">
           <div class="icon"><i class="fa fa-television" aria-hidden="true"></i></div>
           <h3>Furnished Rentals</h3>
         </a>
