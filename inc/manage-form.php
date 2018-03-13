@@ -1,5 +1,5 @@
 
-<form name="dfform" action="http://myhomeleasing.localhomesearch.net/idx/" target="_new">
+<form name="dfform" action="https://myhomeleasing.localhomesearch.net/idx/" target="_new">
 <input type="hidden" name="op" value="query">
 <input type="hidden" name="stype" value="area">
 <input type="hidden" name="_srf" value="1">
@@ -15,15 +15,15 @@ Property Type:<br/><select name="proptype">
 
 <script type="text/javascript">
 if (typeof jQuery == 'undefined') {
-    document.write('<scr' + 'ipt type="text/javascript" src="http://c1203812.cdn.cloudfiles.rackspacecloud.com/jquery-min.js"></scr' + 'ipt>');
+    document.write('<scr' + 'ipt type="text/javascript" src="https://c1203812.cdn.cloudfiles.rackspacecloud.com/jquery-min.js"></scr' + 'ipt>');
 } else {
 // nothing
 }
 </script>
-  <script src="http://c1203812.cdn.cloudfiles.rackspacecloud.com/jquery.autocomplete.min.j…" type="text/javascript"></script>
-  <link href="http://c1203812.cdn.cloudfiles.rackspacecloud.com/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
-  <script src="http://img.davisfarrell.com/js/localdata.js" type="text/javascript"></script>
-  <script src="http://img.davisfarrell.com/js/autosub_so.js" type="text/javascript"></script>
+  <script src="https://c1203812.cdn.cloudfiles.rackspacecloud.com/jquery.autocomplete.min.j…" type="text/javascript"></script>
+  <link href="https://c1203812.cdn.cloudfiles.rackspacecloud.com/jquery.autocomplete.css" rel="stylesheet" type="text/css" />
+  <script src="https://img.davisfarrell.com/js/localdata.js" type="text/javascript"></script>
+  <script src="httsp://img.davisfarrell.com/js/autosub_so.js" type="text/javascript"></script>
 
 		Area:<br/><select name="area">
 <option value="">Choose an area</option>
