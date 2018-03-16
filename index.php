@@ -76,10 +76,11 @@ $the_query = new WP_Query( $querySlides );
 
     <section class="tab-buttons">
       <div class="col">
-        <a href="https://myhomeleasing.localhomesearch.net/idx/?op=query&stype=area&_srf=1&subv2=&proptype=rnt&my=1&street=&city=&zip=&price_min=&price_max=&beds=&baths=&sqft=&acreage=">
+        <!-- <a href="https://myhomeleasing.localhomesearch.net/idx/?op=query&stype=area&_srf=1&subv2=&proptype=rnt&my=1&street=&city=&zip=&price_min=&price_max=&beds=&baths=&sqft=&acreage="> -->
+        <a href="https://myhomeleasing.localhomesearch.net/mhlmap">
           
           <div class="icon"><i class="fa fa-key" aria-hidden="true"></i></div>
-          <h3>Hot Properties</h3>
+          <h3>Map Search</h3>
         </a>
       </div><!-- col -->
       <div class="col">
@@ -102,10 +103,10 @@ $the_query = new WP_Query( $querySlides );
         </a>
       </div><!-- col -->
 
-      <div class="quick-search">
+     <!-- <div class="quick-search">
         <h3>Quick Search</h3>
-         <?php get_template_part('inc/manage-form'); ?>
-      </div><!-- quick search -->
+         <?php //get_template_part('inc/manage-form'); ?>
+      </div> quick search -->
 
 
     </section>
