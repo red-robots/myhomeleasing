@@ -71,6 +71,12 @@ $the_query = new WP_Query( $querySlides );
 
   </div><!-- find-box-wrapper -->
 
+  <section class="mobile-btn">
+    <div class="mbtn">
+      <a href="https://myhomeleasing.localhomesearch.net/idx/?op=query&stype=area&_srf=1&subv2=&proptype=rnt&my=1&street=&city=&zip=&price_min=&price_max=&beds=&baths=&sqft=&acreage=">Available Rentals</a>
+    </div>
+  </section>
+
     <div id="find-box-wrapper">
    
 

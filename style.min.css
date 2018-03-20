@@ -548,7 +548,7 @@ to{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translat
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+ */.fa{display:inline-block;font:normal normal normal 14px / 1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-15%}
 .fa-2x{font-size:2em}
 .fa-3x{font-size:3em}
@@ -1641,6 +1641,10 @@ ol.pings h3{font-size:.9em}
 @media screen and (min-width:976px){.purple-button a{font-size:18px}
 }.purple-button a:hover{color:inherit}
 .purple-button:after{font-family:"flexslider-icon";font-size:30px;color:white;display:block;content:'\f002';margin-left:10px;line-height:1;vertical-align:middle}
+section.mobile-btn{width:100%;clear:both;margin:20px auto;padding:20px 0}
+@media screen and (min-width:725px){section.mobile-btn{display:none}
+}section.mobile-btn .mbtn{width:90%;margin:0 auto}
+section.mobile-btn .mbtn a{background-color:#334ea5;color:#fff;text-decoration:none;padding:15px 0;display:block;text-align:center}
 #mortgage-calc-left{width:49%;float:left}
 #mortgage-calc-right{width:49%;float:right}
 .communities-photo,.flexslider ul.slides .communities-photo{width:100%;line-height:0;float:left;overflow:hidden;position:relative}
